@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>camunda-process-test-coverage-parent</artifactId>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
+        <artifactId>process-test-coverage-parent</artifactId>
+        <groupId>org.cibseven.community.process_test_coverage</groupId>
         <version>2.7.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>camunda-process-test-coverage-report-generator</artifactId>
-    <name>Camunda Process Test Coverage Report Generator</name>
+    <artifactId>process-test-coverage-report-generator</artifactId>
+    <name>CIB seven Process Test Coverage Report Generator</name>
 
     <properties>
         <dokka.skip>true</dokka.skip>
@@ -20,8 +20,8 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.camunda.community.process_test_coverage</groupId>
-            <artifactId>camunda-process-test-coverage-core</artifactId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
+            <artifactId>process-test-coverage-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

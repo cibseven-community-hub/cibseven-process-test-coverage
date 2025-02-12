@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <artifactId>camunda-process-test-coverage-examples-parent</artifactId>
+        <groupId>org.cibseven.community.process_test_coverage</groupId>
+        <artifactId>process-test-coverage-examples-parent</artifactId>
         <version>2.7.1-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Example Spring-Testing Platform 7</name>
-    <artifactId>camunda-process-test-coverage-examples-spring-test-platform-7</artifactId>
+    <name>CIB seven Process Test Coverage Example Spring-Testing Platform 7</name>
+    <artifactId>process-test-coverage-examples-spring-test-platform-7</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,8 +17,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.camunda.community.process_test_coverage</groupId>
-            <artifactId>camunda-process-test-coverage-spring-test-platform-7</artifactId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
+            <artifactId>process-test-coverage-spring-test-platform-7</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -62,8 +62,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <groupId>org.cibseven.community.process_test_coverage</groupId>
+                <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>aggregate-reports</id>
