@@ -39,8 +39,8 @@ possible to configure the output directory for the aggregation report inside the
 
 ```xml
 <plugin>
-    <groupId>org.camunda.community.process_test_coverage</groupId>
-    <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+    <groupId>org.cibseven.community.process_test_coverage</groupId>
+    <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
     <version>@project.version@</version>
     <executions>
         <execution>

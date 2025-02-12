@@ -32,7 +32,7 @@ call from your command line:
 
 ## Project build modes and profiles
 
-### Camunda Version
+### CIB seven Version
 
 The library is compiled against an older version of CIB seven (see cibseven.compile.version property in parent POM).
 To select a CIB seven version for the tests you can start with a designated profile e.g. cibseven-bpm-engine-1.1.0.
