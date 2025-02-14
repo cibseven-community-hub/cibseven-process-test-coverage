@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.spring_starter.platform7
+package org.cibseven.community.process_test_coverage.spring_starter.platform7
 
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test

@@ -12,7 +12,7 @@
     <groupId>org.cibseven.community.process_test_coverage</groupId>
     <artifactId>process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
-    <version>2.7.1-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>CIB seven Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.
@@ -36,10 +36,6 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
-        <!--
-        For backwards compatibility we pin the version to compile to Camunda 7.17.
-        -->
-<!--        <camunda.compile.version>7.17.0</camunda.compile.version>-->
         <cibseven.compile.version>1.1.0</cibseven.compile.version>
 <!--        <zeebe.version>8.4.5</zeebe.version>-->
 <!--        <spring-zeebe.version>8.3.6</spring-zeebe.version>-->
@@ -350,29 +346,6 @@
             </build>
         </profile>
     </profiles>
-
-    <repositories>
-        <repository>
-            <id>maven-central</id>
-            <name>Maven Central</name>
-            <url>https://repo1.maven.org/maven2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <!-- Required for local builds by community users on master branch -->
-            <id>mvn-cibseven-public</id>
-            <name>CIB seven Public Repository</name>
-            <url>https://artifacts.cibseven.org/repository/public</url>
-        </repository>
-        <repository>
-            <!-- Required for local builds by developers on maintainance branches -->
-            <id>mvn-cibseven-snapshots</id>
-            <name>CIB seven Snapshots repository</name>
-            <url>https://artifacts.cibseven.org/repository/snapshots</url>
-        </repository>
-    </repositories> 
 
     <licenses>
         <license>

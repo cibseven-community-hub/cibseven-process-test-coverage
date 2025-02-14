@@ -32,7 +32,7 @@
  * See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package org.camunda.community.process_test_coverage.engine.platform7
+package org.cibseven.community.process_test_coverage.engine.platform7
 
 import org.cibseven.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl
 import java.util.*

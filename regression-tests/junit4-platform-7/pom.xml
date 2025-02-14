@@ -16,13 +16,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
             <artifactId>process-test-coverage-core</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
             <artifactId>process-test-coverage-junit4-platform-7</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>

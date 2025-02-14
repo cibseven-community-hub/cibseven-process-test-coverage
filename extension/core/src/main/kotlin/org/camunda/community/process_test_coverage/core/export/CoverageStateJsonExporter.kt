@@ -17,11 +17,11 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.export
+package org.cibseven.community.process_test_coverage.core.export
 
 import com.google.gson.Gson
-import org.camunda.community.process_test_coverage.core.model.Model
-import org.camunda.community.process_test_coverage.core.model.Suite
+import org.cibseven.community.process_test_coverage.core.model.Model
+import org.cibseven.community.process_test_coverage.core.model.Suite
 
 /**
  * Exporter for Coverage State

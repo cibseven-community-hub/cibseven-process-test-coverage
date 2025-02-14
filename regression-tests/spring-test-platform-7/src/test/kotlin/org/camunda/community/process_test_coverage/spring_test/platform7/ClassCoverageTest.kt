@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.spring_test.platform7
+package org.cibseven.community.process_test_coverage.spring_test.platform7
 
 import org.cibseven.bpm.engine.RuntimeService
 import org.junit.jupiter.api.Test

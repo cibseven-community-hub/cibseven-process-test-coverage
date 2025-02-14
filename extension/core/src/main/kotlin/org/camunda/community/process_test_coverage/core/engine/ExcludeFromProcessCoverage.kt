@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.engine
+package org.cibseven.community.process_test_coverage.core.engine
 
 /**
  * Annotation to mark test classes or methods, that should be excluded from

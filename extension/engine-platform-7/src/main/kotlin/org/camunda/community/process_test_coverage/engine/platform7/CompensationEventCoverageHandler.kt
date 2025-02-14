@@ -32,7 +32,7 @@
  * See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package org.camunda.community.process_test_coverage.engine.platform7
+package org.cibseven.community.process_test_coverage.engine.platform7
 
 import org.cibseven.bpm.engine.impl.bpmn.helper.BpmnProperties
 import org.cibseven.bpm.engine.impl.event.CompensationEventHandler
@@ -40,10 +40,10 @@ import org.cibseven.bpm.engine.impl.interceptor.CommandContext
 import org.cibseven.bpm.engine.impl.persistence.entity.EventSubscriptionEntity
 import org.cibseven.bpm.engine.impl.persistence.entity.ProcessDefinitionEntity
 import org.cibseven.bpm.engine.impl.pvm.process.ActivityImpl
-import org.camunda.community.process_test_coverage.core.model.Collector
-import org.camunda.community.process_test_coverage.core.model.Event
-import org.camunda.community.process_test_coverage.core.model.EventSource
-import org.camunda.community.process_test_coverage.core.model.EventType
+import org.cibseven.community.process_test_coverage.core.model.Collector
+import org.cibseven.community.process_test_coverage.core.model.Event
+import org.cibseven.community.process_test_coverage.core.model.EventSource
+import org.cibseven.community.process_test_coverage.core.model.EventType
 import java.time.Instant
 
 /**

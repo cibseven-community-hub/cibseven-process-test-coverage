@@ -11,14 +11,14 @@
         <property name="customEventHandlers">
             <list merge="true">
                 <bean
-                        class="org.camunda.community.process_test_coverage.engine.platform7.CompensationEventCoverageHandler"/>
+                        class="org.cibseven.community.process_test_coverage.engine.platform7.CompensationEventCoverageHandler"/>
             </list>
         </property>
 
         <property name="customPostBPMNParseListeners">
             <list>
                 <bean
-                        class="org.camunda.community.process_test_coverage.engine.platform7.ElementCoverageParseListener"/>
+                        class="org.cibseven.community.process_test_coverage.engine.platform7.ElementCoverageParseListener"/>
             </list>
         </property>
 

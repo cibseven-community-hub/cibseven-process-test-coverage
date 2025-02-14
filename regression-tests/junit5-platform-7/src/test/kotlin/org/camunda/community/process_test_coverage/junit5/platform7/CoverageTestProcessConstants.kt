@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit5.platform7
+package org.cibseven.community.process_test_coverage.junit5.platform7
 
 object CoverageTestProcessConstants {
 

@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.engine
+package org.cibseven.community.process_test_coverage.core.engine
 
 import org.springframework.util.PatternMatchUtils
 import java.lang.reflect.Method

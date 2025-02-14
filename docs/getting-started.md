@@ -65,7 +65,7 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 
 ```xml
 <bean id="processEngineConfiguration"
-   class="org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
+   class="org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
    ...
 </bean>
 ```
@@ -227,11 +227,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.camunda.community.process_test_coverage:camunda-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
+        classpath("org.cibseven.community.process_test_coverage:camunda-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
     }
 }
 
-apply(plugin = "org.camunda.community.process_test_coverage.report-aggregator")
+apply(plugin = "org.cibseven.community.process_test_coverage.report-aggregator")
 ```
 
 Afterwards the reports can be aggregated by calling `gradle aggregateProcessTestCoverage`.

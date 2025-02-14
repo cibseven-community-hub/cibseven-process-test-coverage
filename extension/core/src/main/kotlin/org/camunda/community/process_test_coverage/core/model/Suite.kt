@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.model
+package org.cibseven.community.process_test_coverage.core.model
 
 /**
  * A suite includes several [Run] and contains the data for the coverage calculation.

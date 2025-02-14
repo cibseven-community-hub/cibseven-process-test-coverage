@@ -17,13 +17,13 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.engine.platform7
+package org.cibseven.community.process_test_coverage.engine.platform7
 
 import mu.KLogging
 import org.cibseven.bpm.engine.ProcessEngine
 import org.cibseven.bpm.engine.impl.bpmn.parser.BpmnParseListener
 import org.cibseven.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl
-import org.camunda.community.process_test_coverage.core.model.Collector
+import org.cibseven.community.process_test_coverage.core.model.Collector
 
 class ProcessEngineAdapter(
     private val processEngine: ProcessEngine,

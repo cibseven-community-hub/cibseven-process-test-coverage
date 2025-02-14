@@ -43,7 +43,7 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 
 ```xml
 <bean id="processEngineConfiguration"
-   class="org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
+   class="org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
    ...
 </bean>
 ```

@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.spring_test.platform7;
+package org.cibseven.community.process_test_coverage.examples.spring_test.platform7;
 
 /*-
  * #%L
@@ -20,7 +20,7 @@ package org.camunda.community.process_test_coverage.examples.spring_test.platfor
  * #L%
  */
 
-import org.camunda.community.process_test_coverage.spring_test.common.ProcessEngineCoverageProperties;
+import org.cibseven.community.process_test_coverage.spring_test.common.ProcessEngineCoverageProperties;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 

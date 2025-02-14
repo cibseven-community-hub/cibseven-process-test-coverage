@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.sonar
+package org.cibseven.community.process_test_coverage.sonar
 
 import org.cibseven.bpm.model.bpmn.Bpmn
 import org.cibseven.bpm.model.bpmn.BpmnModelInstance
@@ -27,9 +27,9 @@ import org.cibseven.bpm.model.bpmn.instance.LinkEventDefinition
 import org.cibseven.bpm.model.bpmn.instance.Process
 import org.cibseven.bpm.model.bpmn.instance.SequenceFlow
 import org.cibseven.bpm.model.xml.instance.ModelElementInstance
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.createCoverageStateResult
-import org.camunda.community.process_test_coverage.core.export.CoverageStateResult
-import org.camunda.community.process_test_coverage.core.model.Model
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.createCoverageStateResult
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateResult
+import org.cibseven.community.process_test_coverage.core.model.Model
 import org.slf4j.LoggerFactory
 import org.sonar.api.batch.fs.InputFile
 import org.sonar.api.batch.sensor.SensorContext

@@ -17,10 +17,10 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.sonar
+package org.cibseven.community.process_test_coverage.sonar
 
 import org.assertj.core.api.Assertions.assertThat
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito
 import org.sonar.api.batch.fs.internal.TestInputFileBuilder

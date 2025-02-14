@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit4.platform7.spring;
+package org.cibseven.community.process_test_coverage.junit4.platform7.spring;
 
 /*-
  * #%L
@@ -21,7 +21,7 @@ package org.camunda.community.process_test_coverage.junit4.platform7.spring;
  */
 
 import org.cibseven.bpm.engine.spring.SpringProcessEngineConfiguration;
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator;
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator;
 
 /**
  * Spring process engine configuration additionally configuring

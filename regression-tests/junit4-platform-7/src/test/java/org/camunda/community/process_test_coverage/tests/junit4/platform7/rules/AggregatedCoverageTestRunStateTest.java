@@ -1,6 +1,6 @@
-package org.camunda.community.process_test_coverage.tests.junit4.platform7.rules;
+package org.cibseven.community.process_test_coverage.tests.junit4.platform7.rules;
 
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil;
+import org.cibseven.community.process_test_coverage.report.CoverageReportUtil;
 import org.junit.experimental.runners.Enclosed;
 import org.junit.runner.RunWith;
 

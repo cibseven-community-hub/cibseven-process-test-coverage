@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit4.platform7.rules;
+package org.cibseven.community.process_test_coverage.junit4.platform7.rules;
 
 /*-
  * #%L
@@ -23,12 +23,12 @@ package org.camunda.community.process_test_coverage.junit4.platform7.rules;
 import org.cibseven.bpm.engine.ProcessEngine;
 import org.cibseven.bpm.engine.repository.ProcessDefinition;
 import org.cibseven.bpm.engine.test.ProcessEngineRule;
-import org.camunda.community.process_test_coverage.engine.platform7.ExecutionContextModelProvider;
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessEngineAdapter;
-import org.camunda.community.process_test_coverage.core.model.DefaultCollector;
-import org.camunda.community.process_test_coverage.core.model.Run;
-import org.camunda.community.process_test_coverage.core.model.Suite;
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil;
+import org.cibseven.community.process_test_coverage.engine.platform7.ExecutionContextModelProvider;
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessEngineAdapter;
+import org.cibseven.community.process_test_coverage.core.model.DefaultCollector;
+import org.cibseven.community.process_test_coverage.core.model.Run;
+import org.cibseven.community.process_test_coverage.core.model.Suite;
+import org.cibseven.community.process_test_coverage.report.CoverageReportUtil;
 import org.hamcrest.Matcher;
 import org.junit.ClassRule;
 import org.junit.Rule;

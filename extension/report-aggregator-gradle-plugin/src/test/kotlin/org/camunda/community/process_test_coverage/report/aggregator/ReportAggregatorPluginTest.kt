@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.report.aggregator
+package org.cibseven.community.process_test_coverage.report.aggregator
 
 import com.google.gson.Gson
 import com.google.gson.JsonObject
@@ -52,9 +52,9 @@ class ReportAggregatorPluginTest {
     @Test
     fun reportAggregatorPluginTest() {
         val project: Project = ProjectBuilder.builder().build()
-        project.pluginManager.apply("org.camunda.community.process_test_coverage.report-aggregator")
+        project.pluginManager.apply("org.cibseven.community.process_test_coverage.report-aggregator")
         assertTrue(
-            project.pluginManager.hasPlugin("org.camunda.community.process_test_coverage.report-aggregator")
+            project.pluginManager.hasPlugin("org.cibseven.community.process_test_coverage.report-aggregator")
         )
         assertNotNull(project.tasks.getByName("aggregateProcessTestCoverage"))
     }
@@ -66,7 +66,7 @@ class ReportAggregatorPluginTest {
         Files.write(settingsFile.toPath(), "rootProject.name = 'process-coverage-gradle-plugin-test'".toByteArray())
         val buildFileContent = """
             plugins {
-                id 'org.camunda.community.process_test_coverage.report-aggregator'
+                id 'org.cibseven.community.process_test_coverage.report-aggregator'
             }
         """
         Files.write(buildFile.toPath(), buildFileContent.toByteArray())
@@ -120,7 +120,7 @@ class ReportAggregatorPluginTest {
         copyDirectory(Paths.get("src/test/resources/different_report_directory/"), testProjectDir.toPath())
         val buildFileContent = """
             plugins {
-                id 'org.camunda.community.process_test_coverage.report-aggregator'
+                id 'org.cibseven.community.process_test_coverage.report-aggregator'
             }
             
             aggregateProcessTestCoverage {

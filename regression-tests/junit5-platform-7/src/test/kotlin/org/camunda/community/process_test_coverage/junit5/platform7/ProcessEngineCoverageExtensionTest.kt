@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit5.platform7
+package org.cibseven.community.process_test_coverage.junit5.platform7
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
@@ -24,7 +24,7 @@ class ProcessEngineCoverageExtensionTest {
 
         // Assert all files were generated.
         assertThat(reportPath).isDirectory()
-        assertThat(reportPath.resolve("org.camunda.community.process_test_coverage.junit5.platform7.DifferentReportDirectoryTest/report.json")).isFile()
+        assertThat(reportPath.resolve("org.cibseven.community.process_test_coverage.junit5.platform7.DifferentReportDirectoryTest/report.json")).isFile()
     }
 
 }

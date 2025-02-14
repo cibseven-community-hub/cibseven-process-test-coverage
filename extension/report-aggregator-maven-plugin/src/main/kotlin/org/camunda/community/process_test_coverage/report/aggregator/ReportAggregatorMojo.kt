@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.report.aggregator
+package org.cibseven.community.process_test_coverage.report.aggregator
 
 import org.apache.maven.plugin.AbstractMojo
 import org.apache.maven.plugins.annotations.LifecyclePhase
@@ -25,10 +25,10 @@ import org.apache.maven.plugins.annotations.Mojo
 import org.apache.maven.plugins.annotations.Parameter
 import org.apache.maven.project.MavenProject
 import org.apache.maven.reporting.MavenReport
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.combineCoverageStateResults
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.createCoverageStateResult
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.readCoverageStateResult
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.combineCoverageStateResults
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.createCoverageStateResult
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.readCoverageStateResult
+import org.cibseven.community.process_test_coverage.report.CoverageReportUtil
 import java.io.File
 import java.util.*
 

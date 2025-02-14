@@ -4,7 +4,7 @@
     <parent>
         <artifactId>process-test-coverage-parent</artifactId>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <version>2.7.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <name>CIB seven Process Test Coverage Spring-Testing Common</name>
     <artifactId>process-test-coverage-spring-test-common</artifactId>
@@ -12,12 +12,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
             <artifactId>process-test-coverage-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
             <artifactId>process-test-coverage-report-generator</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>

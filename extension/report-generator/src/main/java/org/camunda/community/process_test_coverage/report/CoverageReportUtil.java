@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.report;
+package org.cibseven.community.process_test_coverage.report;
 
 /*-
  * #%L
@@ -20,9 +20,9 @@ package org.camunda.community.process_test_coverage.report;
  * #L%
  */
 
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter;
-import org.camunda.community.process_test_coverage.core.model.DefaultCollector;
-import org.camunda.community.process_test_coverage.core.model.Suite;
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter;
+import org.cibseven.community.process_test_coverage.core.model.DefaultCollector;
+import org.cibseven.community.process_test_coverage.core.model.Suite;
 
 import java.io.*;
 import java.net.URL;

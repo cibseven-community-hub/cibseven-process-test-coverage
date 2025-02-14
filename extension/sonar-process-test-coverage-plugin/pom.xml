@@ -4,15 +4,18 @@
     <parent>
         <artifactId>process-test-coverage-parent</artifactId>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <version>2.7.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
+
     <name>CIB seven Process Test Coverage Sonar Plugin</name>
     <artifactId>sonar-camunda-process-test-coverage-plugin</artifactId>
     <packaging>sonar-plugin</packaging>
+
     <properties>
         <sonar-plugin-api.version>10.7.0.2191</sonar-plugin-api.version>
         <sonar.api.impl.version>10.3.0.82913</sonar.api.impl.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.sonarsource.api.plugin</groupId>
@@ -23,6 +26,7 @@
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
             <artifactId>process-test-coverage-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.cibseven.bpm.model</groupId>
@@ -86,9 +90,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <pluginKey>processtestcoverage</pluginKey>
-                    <pluginClass>org.camunda.community.process_test_coverage.sonar.ProcessTestCoveragePlugin</pluginClass>
-                    <pluginSourcesUrl>https://github.com/camunda-community-hub/camunda-process-test-coverage</pluginSourcesUrl>
-                    <pluginIssueTrackerUrl>https://github.com/camunda-community-hub/camunda-process-test-coverage/issues</pluginIssueTrackerUrl>
+                    <pluginClass>org.cibseven.community.process_test_coverage.sonar.ProcessTestCoveragePlugin</pluginClass>
+                    <pluginSourcesUrl>https://github.com/cibseven-community-hub/process-test-coverage</pluginSourcesUrl>
+                    <pluginIssueTrackerUrl>https://github.com/cibseven-community-hub/process-test-coverage/issues</pluginIssueTrackerUrl>
                     <pluginApiMinVersion>9.9</pluginApiMinVersion>
                 </configuration>
             </plugin>

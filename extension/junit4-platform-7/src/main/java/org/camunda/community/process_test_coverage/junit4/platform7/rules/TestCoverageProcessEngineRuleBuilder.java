@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit4.platform7.rules;
+package org.cibseven.community.process_test_coverage.junit4.platform7.rules;
 
 /*-
  * #%L
@@ -33,9 +33,9 @@ public class TestCoverageProcessEngineRuleBuilder {
      * If you set this property to a ratio (e.g. "1.0" for full coverage),
      * the @ClassRule will fail the test run if the coverage is less.<br>
      * Example parameter for running java:<br>
-     * <code>-Dorg.camunda.community.process_test_coverage.ASSERT_AT_LEAST=1.0</code>
+     * <code>-Dorg.cibseven.community.process_test_coverage.ASSERT_AT_LEAST=1.0</code>
      */
-    public static final String DEFAULT_ASSERT_AT_LEAST_PROPERTY = "org.camunda.community.process_test_coverage.ASSERT_AT_LEAST";
+    public static final String DEFAULT_ASSERT_AT_LEAST_PROPERTY = "org.cibseven.community.process_test_coverage.ASSERT_AT_LEAST";
 
     private final TestCoverageProcessEngineRule rule;
 

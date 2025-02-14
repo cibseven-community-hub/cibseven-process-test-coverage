@@ -17,18 +17,18 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.junit5.platform7
+package org.cibseven.community.process_test_coverage.junit5.platform7
 
 import mu.KLogging
 import org.assertj.core.api.Condition
 import org.cibseven.bpm.engine.ProcessEngineConfiguration
 import org.cibseven.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl
 import org.cibseven.bpm.engine.test.junit5.ProcessEngineExtension
-import org.camunda.community.process_test_coverage.core.model.DefaultCollector
-import org.camunda.community.process_test_coverage.engine.platform7.ExecutionContextModelProvider
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessEngineAdapter
-import org.camunda.community.process_test_coverage.junit5.common.ProcessEngineCoverageExtensionBuilder
-import org.camunda.community.process_test_coverage.junit5.common.ProcessEngineCoverageExtensionHelper
+import org.cibseven.community.process_test_coverage.core.model.DefaultCollector
+import org.cibseven.community.process_test_coverage.engine.platform7.ExecutionContextModelProvider
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessEngineAdapter
+import org.cibseven.community.process_test_coverage.junit5.common.ProcessEngineCoverageExtensionBuilder
+import org.cibseven.community.process_test_coverage.junit5.common.ProcessEngineCoverageExtensionHelper
 import org.junit.jupiter.api.extension.AfterAllCallback
 import org.junit.jupiter.api.extension.BeforeAllCallback
 import org.junit.jupiter.api.extension.ExtensionContext
@@ -148,7 +148,7 @@ class ProcessEngineCoverageExtension(
          */
         @Deprecated("Pass the configuration resource directly when creating the builder",
                 ReplaceWith("ProcessEngineCoverageExtension.builder(configurationResource)",
-                        "org.camunda.community.process_test_coverage.junit5.ProcessEngineCoverageExtension"))
+                        "org.cibseven.community.process_test_coverage.junit5.ProcessEngineCoverageExtension"))
         fun configurationResource(configurationResource: String): Builder {
             return if (this.configurationResource != null) {
                 logger.warn { "configuration resource ${this.configurationResource} already configured, ignoring $configurationResource" }

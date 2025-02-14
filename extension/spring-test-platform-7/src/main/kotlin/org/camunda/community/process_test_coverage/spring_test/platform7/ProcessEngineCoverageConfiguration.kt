@@ -17,13 +17,13 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.spring_test.platform7
+package org.cibseven.community.process_test_coverage.spring_test.platform7
 
 import org.cibseven.bpm.engine.spring.SpringProcessEngineConfiguration
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator
 import org.cibseven.bpm.spring.boot.starter.configuration.Ordering
 import org.cibseven.bpm.spring.boot.starter.configuration.impl.AbstractCamundaConfiguration
-import org.camunda.community.process_test_coverage.spring_test.common.ProcessEngineCoverageProperties
+import org.cibseven.community.process_test_coverage.spring_test.common.ProcessEngineCoverageProperties
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

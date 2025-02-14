@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.model
+package org.cibseven.community.process_test_coverage.core.model
 
 /**
  * A run is a specific execution in a [Suite]

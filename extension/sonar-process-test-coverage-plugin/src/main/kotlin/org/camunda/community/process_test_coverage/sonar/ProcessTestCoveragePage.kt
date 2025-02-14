@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.sonar
+package org.cibseven.community.process_test_coverage.sonar
 
 import org.sonar.api.web.page.Context
 import org.sonar.api.web.page.Page

@@ -17,12 +17,12 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.report.aggregator
+package org.cibseven.community.process_test_coverage.report.aggregator
 
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.combineCoverageStateResults
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.createCoverageStateResult
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.readCoverageStateResult
-import org.camunda.community.process_test_coverage.report.CoverageReportUtil
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.combineCoverageStateResults
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.createCoverageStateResult
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.readCoverageStateResult
+import org.cibseven.community.process_test_coverage.report.CoverageReportUtil
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import java.io.File

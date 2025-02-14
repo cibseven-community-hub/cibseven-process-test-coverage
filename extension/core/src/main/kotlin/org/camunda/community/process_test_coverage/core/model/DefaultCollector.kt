@@ -17,9 +17,9 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.model
+package org.cibseven.community.process_test_coverage.core.model
 
-import org.camunda.community.process_test_coverage.core.engine.ModelProvider
+import org.cibseven.community.process_test_coverage.core.engine.ModelProvider
 
 /**
  * Default Collector for the coverage.

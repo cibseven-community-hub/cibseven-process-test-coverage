@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.jgiven.platform7;
+package org.cibseven.community.process_test_coverage.examples.jgiven.platform7;
 
 /*-
  * #%L
@@ -28,7 +28,7 @@ import org.cibseven.bpm.engine.test.ProcessEngineRule;
 import org.cibseven.bpm.engine.test.assertions.bpmn.AbstractAssertions;
 import org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests;
 import org.cibseven.bpm.engine.variable.impl.VariableMapImpl;
-import org.camunda.community.process_test_coverage.spring_test.platform7.ProcessEngineCoverageTestExecutionListener;
+import org.cibseven.community.process_test_coverage.spring_test.platform7.ProcessEngineCoverageTestExecutionListener;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;

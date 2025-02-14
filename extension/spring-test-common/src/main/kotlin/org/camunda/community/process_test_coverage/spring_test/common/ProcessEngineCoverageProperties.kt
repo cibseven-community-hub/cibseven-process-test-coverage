@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.spring_test.common
+package org.cibseven.community.process_test_coverage.spring_test.common
 
 import org.assertj.core.api.Condition
 
@@ -65,9 +65,9 @@ data class ProcessEngineCoverageProperties(
              * If you set this property to a ratio (e.g. "1.0" for full coverage),
              * the Extension will fail the test run if the coverage is less.<br></br>
              * Example parameter for running java:<br></br>
-             * `-Dorg.camunda.community.process_test_coverage.ASSERT_AT_LEAST=1.0`
+             * `-Dorg.cibseven.community.process_test_coverage.ASSERT_AT_LEAST=1.0`
              */
-            const val DEFAULT_ASSERT_AT_LEAST_PROPERTY = "org.camunda.community.process_test_coverage.ASSERT_AT_LEAST"
+            const val DEFAULT_ASSERT_AT_LEAST_PROPERTY = "org.cibseven.community.process_test_coverage.ASSERT_AT_LEAST"
         }
 
         private var detailedCoverageLogging: Boolean = false

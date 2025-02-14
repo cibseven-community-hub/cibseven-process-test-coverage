@@ -65,7 +65,7 @@ This can be done via an extension setting in the gradle build file.
 
 ```groovy
 plugins {
-    id 'org.camunda.community.process_test_coverage.report-aggregator'
+    id 'org.cibseven.community.process_test_coverage.report-aggregator'
 }
 
 aggregateProcessTestCoverage {

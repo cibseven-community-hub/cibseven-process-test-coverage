@@ -17,9 +17,9 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.engine.platform7
+package org.cibseven.community.process_test_coverage.engine.platform7
 
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator.initializeProcessCoverageExtensions
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator.initializeProcessCoverageExtensions
 import org.cibseven.bpm.engine.spring.SpringProcessEngineConfiguration
 
 /**

@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.jgiven.platform7;
+package org.cibseven.community.process_test_coverage.examples.jgiven.platform7;
 
 /*-
  * #%L

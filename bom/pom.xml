@@ -5,10 +5,10 @@
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <artifactId>process-test-coverage-root</artifactId>
-        <version>2.7.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
-    <name>cibseven Process Test Coverage BOM</name>
+    <name>CIB seven Process Test Coverage BOM</name>
     <artifactId>process-test-coverage-bom</artifactId>
     <packaging>pom</packaging>
 

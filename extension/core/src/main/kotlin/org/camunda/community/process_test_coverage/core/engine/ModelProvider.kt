@@ -17,9 +17,9 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.engine
+package org.cibseven.community.process_test_coverage.core.engine
 
-import org.camunda.community.process_test_coverage.core.model.Model
+import org.cibseven.community.process_test_coverage.core.model.Model
 
 /**
  * Provider for process model.

@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.jgiven.platform7;
+package org.cibseven.community.process_test_coverage.examples.jgiven.platform7;
 
 /*-
  * #%L
@@ -23,7 +23,7 @@ package org.camunda.community.process_test_coverage.examples.jgiven.platform7;
 import org.cibseven.bpm.engine.ProcessEngine;
 import org.cibseven.bpm.engine.impl.cfg.ProcessEngineConfigurationImpl;
 import org.cibseven.bpm.spring.boot.starter.test.helper.StandaloneInMemoryTestConfiguration;
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator;
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageConfigurator;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 

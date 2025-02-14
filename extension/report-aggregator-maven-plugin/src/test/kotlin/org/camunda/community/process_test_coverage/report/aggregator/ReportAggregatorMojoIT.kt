@@ -17,7 +17,7 @@
 // * limitations under the License.
 // * #L%
 // */
-//package org.camunda.community.process_test_coverage.report.aggregator
+//package org.cibseven.community.process_test_coverage.report.aggregator
 //
 //import com.google.gson.Gson
 //import com.google.gson.JsonObject

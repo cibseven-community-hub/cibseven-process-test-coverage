@@ -1,10 +1,10 @@
-package org.camunda.community.process_test_coverage.junit4.platform7.spring;
+package org.cibseven.community.process_test_coverage.junit4.platform7.spring;
 
 import org.cibseven.bpm.engine.ProcessEngine;
 import org.cibseven.bpm.engine.runtime.ProcessInstance;
 import org.cibseven.bpm.engine.test.Deployment;
 import org.cibseven.bpm.engine.test.ProcessEngineRule;
-import org.camunda.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
+import org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
 import org.junit.Assert;
 import org.junit.ClassRule;
 import org.junit.Rule;

@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.jgiven.platform7;
+package org.cibseven.community.process_test_coverage.examples.jgiven.platform7;
 
 /*-
  * #%L
@@ -20,8 +20,8 @@ package org.camunda.community.process_test_coverage.examples.jgiven.platform7;
  * #L%
  */
 
-import io.holunda.camunda.bpm.extension.jgiven.JGivenProcessStage;
-import io.holunda.camunda.bpm.extension.jgiven.ProcessStage;
+import org.cibseven.community.bpm.extension.jgiven.JGivenProcessStage;
+import org.cibseven.community.bpm.extension.jgiven.ProcessStage;
 
 import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.assertThat;
 

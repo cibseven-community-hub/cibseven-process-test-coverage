@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.examples.junit4.platform7;
+package org.cibseven.community.process_test_coverage.examples.junit4.platform7;
 
 /*-
  * #%L
@@ -23,7 +23,7 @@ package org.camunda.community.process_test_coverage.examples.junit4.platform7;
 import org.cibseven.bpm.engine.runtime.ProcessInstance;
 import org.cibseven.bpm.engine.test.Deployment;
 import org.cibseven.bpm.engine.test.ProcessEngineRule;
-import org.camunda.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
+import org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;

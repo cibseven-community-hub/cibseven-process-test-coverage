@@ -1,7 +1,7 @@
-package org.camunda.community.process_test_coverage.junit5.platform7
+package org.cibseven.community.process_test_coverage.junit5.platform7
 
 import org.cibseven.bpm.engine.test.Deployment
-import org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration
+import org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.RegisterExtension
 

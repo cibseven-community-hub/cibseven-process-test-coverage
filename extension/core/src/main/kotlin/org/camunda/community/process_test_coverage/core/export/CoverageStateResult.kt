@@ -17,12 +17,12 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.core.export
+package org.cibseven.community.process_test_coverage.core.export
 
-import org.camunda.community.process_test_coverage.core.model.Coverage
-import org.camunda.community.process_test_coverage.core.model.Event
-import org.camunda.community.process_test_coverage.core.model.Model
-import org.camunda.community.process_test_coverage.core.model.Suite
+import org.cibseven.community.process_test_coverage.core.model.Coverage
+import org.cibseven.community.process_test_coverage.core.model.Event
+import org.cibseven.community.process_test_coverage.core.model.Model
+import org.cibseven.community.process_test_coverage.core.model.Suite
 
 data class CoverageStateResult(
     val suites: Collection<Suite>,

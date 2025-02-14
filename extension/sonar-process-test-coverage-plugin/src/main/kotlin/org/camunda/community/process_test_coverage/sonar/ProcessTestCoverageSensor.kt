@@ -17,10 +17,10 @@
  * limitations under the License.
  * #L%
  */
-package org.camunda.community.process_test_coverage.sonar
+package org.cibseven.community.process_test_coverage.sonar
 
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.combineCoverageStateResults
-import org.camunda.community.process_test_coverage.core.export.CoverageStateJsonExporter.readCoverageStateResult
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.combineCoverageStateResults
+import org.cibseven.community.process_test_coverage.core.export.CoverageStateJsonExporter.readCoverageStateResult
 import org.slf4j.LoggerFactory
 import org.sonar.api.batch.sensor.Sensor
 import org.sonar.api.batch.sensor.SensorContext

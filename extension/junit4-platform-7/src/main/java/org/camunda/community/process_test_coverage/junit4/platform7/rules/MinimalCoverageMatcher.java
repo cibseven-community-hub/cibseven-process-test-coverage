@@ -1,4 +1,4 @@
-package org.camunda.community.process_test_coverage.junit4.platform7.rules;
+package org.cibseven.community.process_test_coverage.junit4.platform7.rules;
 
 /*-
  * #%L
@@ -20,7 +20,7 @@ package org.camunda.community.process_test_coverage.junit4.platform7.rules;
  * #L%
  */
 
-import org.camunda.community.process_test_coverage.core.model.Coverage;
+import org.cibseven.community.process_test_coverage.core.model.Coverage;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 
