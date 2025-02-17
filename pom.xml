@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.cibseven.community.process_test_coverage</groupId>
-    <artifactId>process-test-coverage-root</artifactId>
+    <artifactId>cibseven-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
 

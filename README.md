@@ -31,7 +31,7 @@ This CIB seven community extension **visualises** test process **paths** and **c
 ```xml
 <dependency>
   <groupId>org.cibseven.community.process_test_coverage</groupId>
-  <artifactId>process-test-coverage-junit5-platform-7</artifactId>
+  <artifactId>cibseven-process-test-coverage-junit5-platform-7</artifactId>
   <version>${cibseven-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>

@@ -2,23 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>process-test-coverage-parent</artifactId>
+        <artifactId>cibseven-process-test-coverage-parent</artifactId>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <version>1.0.0</version>
     </parent>
     <name>CIB seven Process Test Coverage Spring-Testing Common</name>
-    <artifactId>process-test-coverage-spring-test-common</artifactId>
+    <artifactId>cibseven-process-test-coverage-spring-test-common</artifactId>
 
 
     <dependencies>
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
-            <artifactId>process-test-coverage-core</artifactId>
+            <artifactId>cibseven-process-test-coverage-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
-            <artifactId>process-test-coverage-report-generator</artifactId>
+            <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

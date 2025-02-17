@@ -5,12 +5,12 @@
 
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <artifactId>process-test-coverage-parent</artifactId>
+        <artifactId>cibseven-process-test-coverage-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Engine Platform 7</name>
-    <artifactId>process-test-coverage-engine-platform-7</artifactId>
+    <artifactId>cibseven-process-test-coverage-engine-platform-7</artifactId>
 
     <properties>
         <dokka.skip>true</dokka.skip>
@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
-            <artifactId>process-test-coverage-core</artifactId>
+            <artifactId>cibseven-process-test-coverage-core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

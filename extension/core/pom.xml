@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>process-test-coverage-parent</artifactId>
+        <artifactId>cibseven-process-test-coverage-parent</artifactId>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <version>1.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Core</name>
-    <artifactId>process-test-coverage-core</artifactId>
+    <artifactId>cibseven-process-test-coverage-core</artifactId>
 
     <properties>
         <dokka.skip>true</dokka.skip>

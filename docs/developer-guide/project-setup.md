@@ -5,8 +5,8 @@ If you are interested in developing and building the project please read the fol
 To get sources of the project, please execute:
 
 ```sh
-git clone https://github.com/cibseven-community-hub/process-test-coverage.git
-cd process-test-coverage
+git clone https://github.com/cibseven-community-hub/cibseven-process-test-coverage.git
+cd cibseven-process-test-coverage
 ```
 
 We are using gitflow in our git SCM for naming branches. That means that you should start from `develop` branch,

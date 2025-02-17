@@ -15,7 +15,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.cibseven.community.process_test_coverage</groupId>
-  <artifactId>process-test-coverage-junit4-platform-7</artifactId>
+  <artifactId>cibseven-process-test-coverage-junit4-platform-7</artifactId>
   <version>${cibseven-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -26,7 +26,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.cibseven.community.process_test_coverage</groupId>
-  <artifactId>process-test-coverage-junit5-platform-7</artifactId>
+  <artifactId>cibseven-process-test-coverage-junit5-platform-7</artifactId>
   <version>${cibseven-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -37,7 +37,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.cibseven.community.process_test_coverage</groupId>
-  <artifactId>process-test-coverage-spring-test-platform-7</artifactId>
+  <artifactId>cibseven-process-test-coverage-spring-test-platform-7</artifactId>
   <version>${cibseven-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -48,7 +48,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.cibseven.community.process_test_coverage</groupId>
-  <artifactId>process-test-coverage-starter-platform-7</artifactId>
+  <artifactId>cibseven-process-test-coverage-starter-platform-7</artifactId>
   <version>${cibseven-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -160,7 +160,7 @@ If you just want to aggregate all reports in one maven module, the plugin can be
         <plugins>
             <plugin>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <artifactId>cibseven-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>aggregate-reports</id>
@@ -189,7 +189,7 @@ You can still configure the plugin in the pluginManagement section.
             <plugins>
                 <plugin>
                     <groupId>org.cibseven.community.process_test_coverage</groupId>
-                    <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                    <artifactId>cibseven-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                     <version>${cibseven-process-test-coverage.version}</version>
                 </plugin>
             </plugins>
@@ -209,7 +209,7 @@ The configuration for this use case looks like this:
         <plugins>
             <plugin>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <artifactId>cibseven-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                 <version>${cibseven-process-test-coverage.version}</version>
             </plugin>
         </plugins>

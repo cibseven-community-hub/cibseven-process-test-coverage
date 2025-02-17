@@ -7,7 +7,7 @@ Read more on [how to get the project up and running](#setting-up-the-project-loc
 
 ## Creating Issues
 
-Please use our [issue tracker](https://github.com/cibseven/process-test-coverage/issues) for project communication.
+Please use our [issue tracker](https://github.com/cibseven/cibseven-process-test-coverage/issues) for project communication.
 When using the issue tracker:
 
 * Be descriptive when creating an issue (what, where, when and how does a problem pop up)?
@@ -22,8 +22,8 @@ Create a pull request if you would like to have an in-depth discussion about som
 The project is build using [Maven 3](https://maven.apache.org/) as build tool.
 To build the project by yourself, go to your cmd line and enter ```mvn clean install``` on the root of the checked out project.
 
-1. git clone https://github.com/cibseven/process-test-coverage.git
-2. cd process-test-coverage/
+1. git clone https://github.com/cibseven/cibseven-process-test-coverage.git
+2. cd cibseven-process-test-coverage/
 3. mvn clean install
 
 ## Creating Pull Requests

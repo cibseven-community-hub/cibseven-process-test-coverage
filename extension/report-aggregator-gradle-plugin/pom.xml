@@ -4,12 +4,12 @@
 
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <artifactId>process-test-coverage-parent</artifactId>
+        <artifactId>cibseven-process-test-coverage-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Report Aggregator Gradle Plugin</name>
-    <artifactId>process-test-coverage-report-aggregator-gradle-plugin</artifactId>
+    <artifactId>cibseven-process-test-coverage-report-aggregator-gradle-plugin</artifactId>
 
     <!--
         This subproject is built by Gradle as the Gradle plugin API requires a Gradle build. This POM
@@ -28,7 +28,7 @@
     <dependencies>
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
-            <artifactId>process-test-coverage-report-generator</artifactId>
+            <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
         </dependency>
     </dependencies>
 

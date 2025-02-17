@@ -4,12 +4,12 @@
 
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <artifactId>process-test-coverage-root</artifactId>
+        <artifactId>cibseven-process-test-coverage-root</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Extension Parent</name>
-    <artifactId>process-test-coverage-parent</artifactId>
+    <artifactId>cibseven-process-test-coverage-parent</artifactId>
     <packaging>pom</packaging>
 
     <modules>
@@ -56,32 +56,32 @@
             <!-- Own modules -->
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-core</artifactId>
+                <artifactId>cibseven-process-test-coverage-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-engine-platform-7</artifactId>
+                <artifactId>cibseven-process-test-coverage-engine-platform-7</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-junit4-platform-7</artifactId>
+                <artifactId>cibseven-process-test-coverage-junit4-platform-7</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-junit5-common</artifactId>
+                <artifactId>cibseven-process-test-coverage-junit5-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-spring-test-common</artifactId>
+                <artifactId>cibseven-process-test-coverage-spring-test-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-report-generator</artifactId>
+                <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

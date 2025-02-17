@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <artifactId>process-test-coverage-examples-parent</artifactId>
+        <artifactId>cibseven-process-test-coverage-examples-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Example JGiven Platform 7</name>
-    <artifactId>process-test-coverage-examples-jgiven-platform-7</artifactId>
+    <artifactId>cibseven-process-test-coverage-examples-jgiven-platform-7</artifactId>
 
     <properties>
         <jgiven.version>1.3.1</jgiven.version>
@@ -23,12 +23,12 @@
 
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
-            <artifactId>process-test-coverage-junit4-platform-7</artifactId>
+            <artifactId>cibseven-process-test-coverage-junit4-platform-7</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
-            <artifactId>process-test-coverage-spring-test-platform-7</artifactId>
+            <artifactId>cibseven-process-test-coverage-spring-test-platform-7</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

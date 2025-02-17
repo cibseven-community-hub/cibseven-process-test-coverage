@@ -4,12 +4,12 @@
 
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <artifactId>process-test-coverage-root</artifactId>
+        <artifactId>cibseven-process-test-coverage-root</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Examples Parent</name>
-    <artifactId>process-test-coverage-examples-parent</artifactId>
+    <artifactId>cibseven-process-test-coverage-examples-parent</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -54,7 +54,7 @@
             <!-- Own BOM -->
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-bom</artifactId>
+                <artifactId>cibseven-process-test-coverage-bom</artifactId>
                 <version>${project.parent.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
@@ -72,7 +72,7 @@
                 </plugin>
                 <plugin>
                     <groupId>org.cibseven.community.process_test_coverage</groupId>
-                    <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                    <artifactId>cibseven-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                     <version>${project.version}</version>
                 </plugin>
             </plugins>
@@ -99,7 +99,7 @@
             </plugin>
             <plugin>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
-                <artifactId>process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <artifactId>cibseven-process-test-coverage-report-aggregator-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </reporting>
