@@ -29,7 +29,6 @@
         <dependency>
             <groupId>org.cibseven.community.process_test_coverage</groupId>
             <artifactId>process-test-coverage-report-generator</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
@@ -160,6 +159,7 @@
             <!-- copy generated JARs -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
                 <executions>
                     <execution>
                         <id>copy-gradle-jars</id>
