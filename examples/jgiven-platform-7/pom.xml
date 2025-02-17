@@ -52,7 +52,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.cibseven.community.testing</groupId>
+            <groupId>org.cibseven.community</groupId>
             <artifactId>cibseven-bpm-jgiven</artifactId>
             <version>${cibseven-bpm-jgiven.version}</version>
             <scope>test</scope>
