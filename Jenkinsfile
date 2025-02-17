@@ -28,12 +28,6 @@ pipeline {
         }
     }
 
-    // Trigger
-    triggers {
-        // This cron job runs at a random minute within each hour, between 9 AM and 6 PM, only on weekdays (Monday to Friday).
-        cron('H 9-18 * * 1-5')
-    }
-
     // Parameter that can be changed in the Jenkins UI
     parameters {
         booleanParam(
