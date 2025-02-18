@@ -115,7 +115,7 @@ pipeline {
             steps {
                 script {
                     withMaven(options: []) {
-                        sh "mvn -X -U -DskipTests clean deploy"
+                        sh "mvn -T4 -U -DskipTests clean deploy"
                     }
                 }
             }
