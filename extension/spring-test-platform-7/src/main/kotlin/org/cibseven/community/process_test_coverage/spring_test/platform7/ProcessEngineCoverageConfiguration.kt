@@ -30,7 +30,7 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.core.annotation.Order
 
 /**
- * Configuration enabling process test coverage in the camunda process engine.
+ * Configuration enabling process test coverage in the CIB seven process engine.
  */
 @Configuration
 class ProcessEngineCoverageConfiguration {

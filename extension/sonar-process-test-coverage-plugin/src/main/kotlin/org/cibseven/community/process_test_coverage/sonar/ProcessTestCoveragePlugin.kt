@@ -37,7 +37,7 @@ class ProcessTestCoveragePlugin : Plugin {
                 .multiValues(true)
                 .category("Process Test Coverage")
                 .description(
-                    "Paths to Camunda Process Test Coverage JSON report files. Each path can be either absolute or relative" +
+                    "Paths to CIB seven Process Test Coverage JSON report files. Each path can be either absolute or relative" +
                             " to the project base directory. Wildcard patterns are accepted (*, ** and ?)."
                 )
                 .build()

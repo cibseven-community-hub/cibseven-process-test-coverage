@@ -197,7 +197,7 @@ You can still configure the plugin in the pluginManagement section.
     </build>
 ```
 
-It can then be invoked by calling *mvn camunda-process-test-coverage-report-aggregator:aggregate*.
+It can then be invoked by calling *mvn cibseven-process-test-coverage-report-aggregator:aggregate*.
 
 ### Usage as a reporting plugin
 
@@ -227,7 +227,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.cibseven.community.process_test_coverage:camunda-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
+        classpath("org.cibseven.community.process_test_coverage:cibseven-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
     }
 }
 
@@ -244,7 +244,7 @@ This functionality is provided by the artifact:
 ```xml
 <dependency>
   <groupId>org.cibseven.community.process_test_coverage</groupId>
-  <artifactId>sonar-camunda-process-test-coverage-plugin</artifactId>
+  <artifactId>sonar-cibseven-process-test-coverage-plugin</artifactId>
   <version>${cibseven-process-test-coverage.version}</version>
 </dependency>
 ```

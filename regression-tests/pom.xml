@@ -44,7 +44,7 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Re-define Camunda -->
+            <!-- Re-define CIB seven -->
             <dependency>
                 <groupId>org.cibseven.bpm</groupId>
                 <artifactId>cibseven-bom</artifactId>

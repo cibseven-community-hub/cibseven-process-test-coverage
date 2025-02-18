@@ -39,7 +39,7 @@ class ProcessTestCoverageSensorTest {
     fun testDescribe() {
         val descriptor: SensorDescriptor = mock(SensorDescriptor::class.java)
         sensor.describe(descriptor)
-        verify(descriptor).name("Camunda Process Test Coverage")
+        verify(descriptor).name("CIB seven Process Test Coverage")
     }
 
     @Test

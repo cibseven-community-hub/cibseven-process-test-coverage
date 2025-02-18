@@ -35,7 +35,7 @@ class ProcessTestCoverageSensor : Sensor {
     }
 
     override fun describe(descriptor: SensorDescriptor) {
-        descriptor.name("Camunda Process Test Coverage")
+        descriptor.name("CIB seven Process Test Coverage")
     }
 
     override fun execute(context: SensorContext) {

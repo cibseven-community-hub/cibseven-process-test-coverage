@@ -37,7 +37,7 @@ class ProcessTestCoverageProjectSensorTest {
     fun testDescribe() {
         val descriptor: SensorDescriptor = Mockito.mock(SensorDescriptor::class.java)
         sensor.describe(descriptor)
-        Mockito.verify(descriptor).name("Camunda Process Test Coverage (Project)")
+        Mockito.verify(descriptor).name("CIB seven Process Test Coverage (Project)")
     }
 
     @Test

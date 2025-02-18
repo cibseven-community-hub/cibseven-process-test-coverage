@@ -12,7 +12,7 @@
     <artifactId>cibseven-process-test-coverage-regression-tests-spring-starter-platform-7</artifactId>
     <name>CIB seven Process Test Coverage Regression Test Spring Starter Platform 7</name>
     <description>
-        All library tests are here in order to allow compiling against Camunda Platform 7 release and regression testing against different versions.
+        All library tests are here in order to allow compiling against CIB seven release and regression testing against different versions.
     </description>
 
     <dependencies>

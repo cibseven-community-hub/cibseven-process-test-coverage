@@ -31,7 +31,7 @@ import java.util.stream.Collectors
 
 /**
  * Provider that is used to load processes from the engine.
- * The Thread Local Context of Camunda is used for this.
+ * The Thread Local Context of CIB seven is used for this.
  */
 class ExecutionContextModelProvider: ModelProvider {
 

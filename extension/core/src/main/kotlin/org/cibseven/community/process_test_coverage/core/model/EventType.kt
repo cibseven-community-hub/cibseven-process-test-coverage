@@ -20,7 +20,7 @@
 package org.cibseven.community.process_test_coverage.core.model
 
 /**
- * Type of an event as happend during Camunda execution.
+ * Type of an event as happend during CIB seven execution.
  *
  * @author dominikhorn
  */

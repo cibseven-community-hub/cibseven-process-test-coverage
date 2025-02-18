@@ -8,7 +8,7 @@
     </parent>
 
     <name>CIB seven Process Test Coverage Sonar Plugin</name>
-    <artifactId>sonar-camunda-process-test-coverage-plugin</artifactId>
+    <artifactId>sonar-cibseven-process-test-coverage-plugin</artifactId>
     <packaging>sonar-plugin</packaging>
 
     <properties>
