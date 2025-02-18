@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     implementation(gradleApi())
-    implementation(group = "org.cibseven.community.process_test_coverage", name = "camunda-process-test-coverage-report-generator", version = "$version")
+    implementation(group = "org.cibseven.community.process_test_coverage", name = "cibseven-process-test-coverage-report-generator", version = "$version")
     testImplementation(gradleTestKit())
     testImplementation(group = "org.junit.jupiter", name = "junit-jupiter", version = "5.10.3")
     testRuntimeOnly(group = "org.junit.platform", name = "junit-platform-launcher")
