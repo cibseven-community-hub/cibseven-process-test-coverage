@@ -62,20 +62,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Gradle is also responsible for creating javadoc such that this task is skipped here. -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <phase>none</phase>
-                    </execution>
-                </executions>
-            </plugin>
             <!-- copy all dependencies to target/dependencies -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -203,11 +189,6 @@
                         </goals>
                         <configuration>
                             <artifacts>
-                                <artifact>
-                                    <file>target/${project.artifactId}-${project.version}-javadoc.jar</file>
-                                    <type>jar</type>
-                                    <classifier>javadoc</classifier>
-                                </artifact>
                                 <artifact>
                                     <file>target/${project.artifactId}-${project.version}-sources.jar</file>
                                     <type>jar</type>
