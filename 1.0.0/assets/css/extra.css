@@ -20,8 +20,8 @@
    Default colors adjustments
    */
    --md-primary-fg-color: var(--monochrome-50);
-   --md-accent-fg-color: var(--secondary);
-   --md-footer-bg-color: var(--primary);
+   --md-accent-fg-color: var(--primary);
+   --md-footer-bg-color: var(--secondary);
 }
 
 [data-md-color-scheme="slate"] {
@@ -36,6 +36,6 @@
    Default colors adjustments
    */
   --md-primary-fg-color: var(--monochrome-50);
-  --md-accent-fg-color: var(--secondary);
-  --md-footer-bg-color: var(--primary);
+  --md-accent-fg-color: var(--primary);
+  --md-footer-bg-color: var(--secondary);
 }
