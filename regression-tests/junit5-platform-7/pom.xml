@@ -37,7 +37,7 @@
         </dependency>
         <dependency>
             <groupId>org.cibseven.bpm</groupId>
-            <artifactId>camunda-engine-spring</artifactId>
+            <artifactId>cibseven-engine-spring</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
