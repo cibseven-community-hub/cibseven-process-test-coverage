@@ -3,7 +3,8 @@ name: Build the docs
 on:
   push:
     branches:
-      - master
+      - main
+      - documentation
     tags:
       - '*'
   release:
