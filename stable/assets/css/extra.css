@@ -1,0 +1,41 @@
+/*
+ * General customizations
+ */
+ /* Customize logo size */
+.md-header__button.md-logo img, .md-header__button.md-logo {
+  height: 15%;
+  width: 15%;
+}
+
+[data-md-color-scheme="default"] {
+  /*
+   CIB colors
+   */
+   --primary: #E11E19;
+   --secondary: #4D6278;
+   --monochrome-50: #7f7f7f;
+
+
+  /*
+   Default colors adjustments
+   */
+   --md-primary-fg-color: var(--monochrome-50);
+   --md-accent-fg-color: var(--secondary);
+   --md-footer-bg-color: var(--primary);
+}
+
+[data-md-color-scheme="slate"] {
+  /*
+   CIB colors
+   */
+   --primary: #E11E19;
+   --secondary: #4D6278;
+
+
+  /*
+   Default colors adjustments
+   */
+  --md-primary-fg-color: var(--monochrome-50);
+  --md-accent-fg-color: var(--secondary);
+  --md-footer-bg-color: var(--primary);
+}
