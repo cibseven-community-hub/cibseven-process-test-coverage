@@ -40,7 +40,7 @@ theme:
     - navigation.sections
     - navigation.top # add "navigate to top" page icon on bottom left
     - toc.integrate # integrate site TOC into the menu on the left
-  logo: assets/img/cibseven-logo.svg
+  logo: assets/img/cibseven-logo.png
   icon:
     repo: fontawesome/brands/github
   font:
