@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/index.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/getting-started.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/developer-guide/contribution.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/developer-guide/project-setup.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/user-guide/index.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/user-guide/configuration.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+    <url>
+         <loc>https://cibseven-community-hub.github.io/cibseven-process-test-coverage/v1.0.0/user-guide/sonarqube.html</loc>
+         <lastmod>2025-03-10</lastmod>
+    </url>
+</urlset>
