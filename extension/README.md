@@ -6,7 +6,7 @@ This allows you to use the library with any of supported versions.
 The library distinguishes between the version of Camunda it is using as a version during
 the compilation and the runtime version used during regression testing.
 
-Current compile version is 7.20
+Current compile version is 2.1.0
 
 Regression test versions are:
 
