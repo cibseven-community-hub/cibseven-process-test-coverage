@@ -10,10 +10,10 @@ Current compile version is 7.20
 
 Regression test versions are:
 
-| JDK \ Camunda Version | 7.20 | 7.21 | 7.22 | 7.23 | 
-|-----------------------|------|------|------|------|
-| JDK 17 (LTS)          | yes  | yes  | yes  | yes  |
-| JDK 21 (LTS)          | yes  | yes  | yes  | yes  |
+| JDK \ CIB seven Version | 1.1.0 | 2.0.0 | 2.1.0 | 
+|-------------------------|-------|-------|-------|
+| JDK 17 (LTS)            | yes   | yes   | yes   |
+| JDK 21 (LTS)            | yes   | yes   | yes   |
 |                       |      |      |      |      |
 
 
