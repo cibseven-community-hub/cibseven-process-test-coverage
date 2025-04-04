@@ -44,16 +44,6 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Zeebe -->
-<!--
-            <dependency>
-                <groupId>io.camunda</groupId>
-                <artifactId>zeebe-process-test-assertions</artifactId>
-                <scope>provided</scope>
-                <version>${zeebe.version}</version>
-            </dependency>
--->
-
             <!-- Own modules -->
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
@@ -85,7 +75,6 @@
                 <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 

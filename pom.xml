@@ -25,8 +25,8 @@
     <inceptionYear>2019</inceptionYear>
 
     <modules>
-        <module>extension</module>
         <module>bom</module>
+        <module>extension</module>
     </modules>
 
     <properties>
