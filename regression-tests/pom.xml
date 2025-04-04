@@ -4,9 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
+    <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <artifactId>cibseven-process-test-coverage-root</artifactId>
         <version>2.1.0-SNAPSHOT</version>
+    </parent>
     </parent>
 
     <name>CIB seven Process Test Coverage Regression Tests Parent</name>
@@ -50,7 +52,6 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
-
             <dependency>
                 <groupId>org.cibseven.bpm</groupId>
                 <artifactId>cibseven-bom</artifactId>
@@ -67,6 +68,7 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -117,6 +119,8 @@
             <id>cibseven-bpm-engine-2.1.0</id>
             <properties>
                 <cibseven.version>2.1.0</cibseven.version>
+            </properties>
+        </profile>
             </properties>
         </profile>
 

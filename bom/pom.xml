@@ -36,8 +36,18 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+<<<<<<< HEAD
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
                 <artifactId>cibseven-process-test-coverage-junit5-platform-7</artifactId>
+=======
+                <groupId>org.camunda.community.process_test_coverage</groupId>
+                <artifactId>camunda-process-test-coverage-junit5-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.camunda.community.process_test_coverage</groupId>
+                <artifactId>camunda-process-test-coverage-junit5-platform-7</artifactId>
+>>>>>>> e46ef430 (feat: #636 some cleanup regarding dependency management)
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -46,8 +56,18 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+<<<<<<< HEAD
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
                 <artifactId>cibseven-process-test-coverage-spring-test-platform-7</artifactId>
+=======
+                <groupId>org.camunda.community.process_test_coverage</groupId>
+                <artifactId>camunda-process-test-coverage-spring-test-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.camunda.community.process_test_coverage</groupId>
+                <artifactId>camunda-process-test-coverage-spring-test-platform-7</artifactId>
+>>>>>>> e46ef430 (feat: #636 some cleanup regarding dependency management)
                 <version>${project.version}</version>
             </dependency>
             <dependency>

@@ -75,7 +75,7 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Camunda 7 -->
+            <!-- CIB Seven -->
             <dependency>
                 <groupId>org.cibseven.bpm</groupId>
                 <artifactId>cibseven-bom</artifactId>

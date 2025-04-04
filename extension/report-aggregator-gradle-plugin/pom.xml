@@ -43,6 +43,12 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
+            <artifactId>camunda-process-test-coverage-bom</artifactId>
+            <type>pom</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
             <artifactId>camunda-process-test-coverage-report-generator</artifactId>
 >>>>>>> e46ef430 (feat: #636 some cleanup regarding dependency management)
         </dependency>
