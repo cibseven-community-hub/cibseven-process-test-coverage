@@ -30,7 +30,7 @@ If you are interested in further documentation, please check our [Documentation 
 
 ## Installation
 
- Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-bom/badge.svg" align="right" /></a>
+Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-bom/badge.svg" align="right" /></a>
 
 ### JUnit5
 
