@@ -121,9 +121,6 @@
                 <cibseven.version>2.1.0</cibseven.version>
             </properties>
         </profile>
-            </properties>
-        </profile>
-
     </profiles>
 
 </project>
