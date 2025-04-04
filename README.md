@@ -17,14 +17,21 @@ This CIB seven community extension **visualises** test process **paths** and **c
 
 * Integrates with all versions of CIB seven
 * Is continuously checked against the latest CIB seven releases (check out our compatibility CI/CD pipeline)
-* Tested with JDKs 11 and 17
+* Tested with JDKs 17 and 21 and different operating systems (Windows, Mac and Linux).
 * Supports **JUnit 4.13.1+** (4.11 does not work) or **JUnit 5**
 * Can be used inside Spring Tests
+
+> [!IMPORTANT]
+> If you're running with a Java version prior to 17 you have to use the old version 2.x (latest 2.8.0)
+
+## Documentation
+
+If you are interested in further documentation, please check our [Documentation Page](https://camunda-community-hub.github.io/camunda-process-test-coverage/snapshot/index.html)
 
 ## Installation
 
  Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-bom/badge.svg" align="right" /></a>
-0
+
 ### JUnit5
 
 ```xml
