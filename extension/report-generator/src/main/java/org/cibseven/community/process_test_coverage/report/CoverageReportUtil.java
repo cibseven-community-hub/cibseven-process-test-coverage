@@ -2,9 +2,9 @@ package org.cibseven.community.process_test_coverage.report;
 
 /*-
  * #%L
- * Camunda Process Test Coverage Report Generator
+ * CIB seven Process Test Coverage Report Generator
  * %%
- * Copyright (C) 2019 - 2024 Camunda
+ * Copyright (C) 2019 - 2026 CIB seven
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,8 +53,8 @@ public class CoverageReportUtil {
      * Root directory for all coverage reports.
      */
     public static String TARGET_DIR_ROOT = System.getProperty("cibseven-process-test-coverage.target-dir-root", "target/process-test-coverage/");
-    public static final String REPORT_RESOURCES = "static";
-    private static final String REPORT_TEMPLATE = "html/bpmn.report-template.html";
+    public static final String REPORT_RESOURCES = "assets";
+    private static final String REPORT_TEMPLATE = "index.html";
 
 
     public static void createReport(final DefaultCollector coverageCollector, final String reportDirectory) {
