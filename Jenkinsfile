@@ -20,8 +20,8 @@ import groovy.transform.Field
         (Constants.MAVEN_JDK_17_CONTAINER): [
             resources: [
                 // cpu: '4',
-                memory: '8Gi',
-                ephemeralStorage: '8Gi'
+                memory: '4Gi',
+                ephemeralStorage: '4Gi'
             ]
         ]
     ]
@@ -69,8 +69,8 @@ pipeline {
                 artifactNumToKeepStr: '5'
             )
         )
-        // Stop build after 240 minutes
-        timeout(time: 240, unit: 'MINUTES')
+        // Stop build after 20 minutes
+        timeout(time: 20, unit: 'MINUTES')
         disableConcurrentBuilds()
     }
 
