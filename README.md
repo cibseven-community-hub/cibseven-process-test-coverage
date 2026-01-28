@@ -1,4 +1,4 @@
-[![CIB seven 1.1.0](https://img.shields.io/badge/CIB%20seven-1.1.0-orange.svg)](https://docs.cibseven.org/manual/1.1/)
+[![CIB seven 2.0.0](https://img.shields.io/badge/CIB%20seven-2.0.0-orange.svg)](https://docs.cibseven.org/manual/2.0/)
 [![Maven Central](https://img.shields.io/maven-central/v/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-starter-platform-7?label=Maven%20Central)](https://central.sonatype.com/artifact/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-starter-platform-7)
 
 # CIB seven Process Test Coverage
