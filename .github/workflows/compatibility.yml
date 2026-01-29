@@ -11,8 +11,7 @@ jobs:
   build:
     strategy:
       fail-fast: false
-      # Build for three operating systems, currently JVMs 11, 17 and latest four Camunda versions (last two years)
-      # We run Legacy support test on Ubuntu, JDK 1.8 until 7.17 (Release 2022).
+      # Build for three operating systems, currently JVMs 17,21 and latest three Camunda versions (last two years)
       matrix:
         os:
           - 'ubuntu-latest'
@@ -23,6 +22,7 @@ jobs:
           - '21'
         cibseven-version:
           - '1.1.0' # 2024
+          - '2.0.0' # 2025
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -48,6 +48,9 @@ jobs:
 
       - name: Prepare Maven Wrapper
         run: chmod +x ./mvnw
+
+      - name: Install BOM
+        run: ./mvnw install -N; ./mvnw install -f bom
 
       - name: Check for valid cibseven profile
         run: ./mvnw enforcer:enforce -f regression-tests -Drules=requireProfileIdsExist "-Pcibseven-bpm-engine-${{ matrix.cibseven-version }}"

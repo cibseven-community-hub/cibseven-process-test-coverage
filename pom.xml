@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.cibseven.community</groupId>
         <artifactId>release-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <relativePath />
     </parent>
 
     <groupId>org.cibseven.community.process_test_coverage</groupId>
     <artifactId>cibseven-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>2.0.0</version>
 
     <name>CIB seven Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.
@@ -26,22 +26,24 @@
 
     <modules>
         <module>extension</module>
-        <module>starter-platform-7</module>
         <module>bom</module>
     </modules>
 
     <properties>
         <version.java>17</version.java>
-        <kotlin.version>2.0.21</kotlin.version>
+        <kotlin.version>2.1.10</kotlin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-        <kotlin-logging.version>3.0.5</kotlin-logging.version>
+        <kotlin-logging.version>7.0.4</kotlin-logging.version>
 
-        <cibseven.compile.version>1.1.0</cibseven.compile.version>
+        <cibseven.compile.version>2.0.0</cibseven.compile.version>
+        <cibseven.bom.version>2.0.0</cibseven.bom.version>
 <!--        <zeebe.version>8.4.5</zeebe.version>-->
 <!--        <spring-zeebe.version>8.3.6</spring-zeebe.version>-->
 <!--        <spring-boot.version>2.7.18</spring-boot.version>-->
         <spring-boot.version>3.3.5</spring-boot.version>
+        <cibseven.bom.version>2.0.0</cibseven.bom.version>
 
+        <mockito-kotlin.version>5.4.0</mockito-kotlin.version>
     </properties>
 
     <dependencyManagement>
@@ -55,9 +57,33 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>io.github.microutils</groupId>
+                <groupId>io.github.oshai</groupId>
                 <artifactId>kotlin-logging-jvm</artifactId>
                 <version>${kotlin-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito.kotlin</groupId>
+                <artifactId>mockito-kotlin</artifactId>
+                <version>${mockito-kotlin.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- Spring Boot import -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <!-- Camunda 7 -->
+            <dependency>
+                <groupId>org.cibseven.bpm</groupId>
+                <artifactId>cibseven-bom</artifactId>
+                <version>${cibseven.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -69,7 +95,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.13.0</version>
+                    <version>3.14.0</version>
                     <configuration>
                         <encoding>UTF-8</encoding>
                         <source>${version.java}</source>
@@ -79,7 +105,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>3.5.2</version>
                     <configuration>
                         <useSystemClassLoader>false</useSystemClassLoader>
                         <shutdown>kill</shutdown>
@@ -118,8 +144,8 @@
                     <version>${kotlin.version}</version>
                     <configuration>
                         <jvmTarget>${version.java}</jvmTarget>
-                        <languageVersion>1.6</languageVersion>
-                        <apiVersion>1.6</apiVersion>
+                        <languageVersion>2.0</languageVersion>
+                        <apiVersion>2.0</apiVersion>
                         <compilerPlugins>
                             <plugin>spring</plugin>
                             <plugin>no-arg</plugin>
@@ -173,12 +199,12 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.5.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>2.4.0</version>
+                    <version>2.5.0</version>
                     <configuration>
                         <licenseName>apache_v2</licenseName>
                         <failOnMissingHeader>true</failOnMissingHeader>
@@ -229,10 +255,6 @@
                 <!-- Kotlin -->
                 <dependency>
                     <groupId>org.jetbrains.kotlin</groupId>
-                    <artifactId>kotlin-stdlib-common</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>org.jetbrains.kotlin</groupId>
                     <artifactId>kotlin-stdlib-jdk8</artifactId>
                 </dependency>
                 <dependency>
@@ -247,7 +269,7 @@
                         <plugin>
                             <groupId>org.jetbrains.dokka</groupId>
                             <artifactId>dokka-maven-plugin</artifactId>
-                            <version>1.9.20</version>
+                            <version>2.0.0</version>
                             <executions>
                                 <execution>
                                     <id>attach-javadocs</id>
@@ -258,7 +280,7 @@
                                 </execution>
                             </executions>
                             <configuration>
-                                <jdkVersion>11</jdkVersion>
+                                <jdkVersion>${version.java}</jdkVersion>
                                 <reportUndocumented>false</reportUndocumented>
                                 <skipEmptyPackages>true</skipEmptyPackages>
                                 <sourceDirectories>
@@ -384,13 +406,16 @@
     </developers>
 
   <repositories>
-    
     <repository>
-      <id>mvn-cibseven-public</id>
-      <name>CIB seven Public Repository</name>
-      <url>https://artifacts.cibseven.org/repository/public</url>
+      <id>mvn-cibseven-community</id>
+      <name>CIB seven Community Repository</name>
+      <url>https://artifacts.cibseven.org/repository/community</url>
     </repository>
-
+    <repository>
+      <id>mvn-cibseven-community-snapshots</id>
+      <name>CIB seven Community Snapshots Repository</name>
+      <url>https://artifacts.cibseven.org/repository/community-snapshots</url>
+    </repository>
   </repositories>
   
 </project>

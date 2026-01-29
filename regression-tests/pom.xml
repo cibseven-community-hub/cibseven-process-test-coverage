@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <artifactId>cibseven-process-test-coverage-root</artifactId>
-        <version>1.1.0-SNAPSHOT</version>
+        <version>2.0.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Regression Tests Parent</name>
@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <graalvm.version>24.0.2</graalvm.version>
+        <graalvm.version>24.1.2</graalvm.version>
         <cibseven.version>${cibseven.compile.version}</cibseven.version>
 
         <jacoco.skip>true</jacoco.skip>
@@ -34,6 +34,14 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Re-define Kotlin (needed because otherwise will be overwritten by spring boot) -->
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-bom</artifactId>
+                <version>${kotlin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
             <!-- Spring Boot import -->
             <dependency>
@@ -44,16 +52,40 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Re-define CIB seven -->
             <dependency>
                 <groupId>org.cibseven.bpm</groupId>
                 <artifactId>cibseven-bom</artifactId>
-                <version>${cibseven.version}</version>
+                <version>${cibseven.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <!-- Own BOM -->
+            <dependency>
+                <groupId>org.cibseven.community.process_test_coverage</groupId>
+                <artifactId>cibseven-process-test-coverage-bom</artifactId>
+                <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.graalvm.polyglot</groupId>
+            <artifactId>js</artifactId>
+            <version>${graalvm.version}</version>
+            <scope>runtime</scope>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.graalvm.js</groupId>
+            <artifactId>js-scriptengine</artifactId>
+            <version>${graalvm.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
 
     <profiles>
         <!-- Profiles just here to ease testing in IDEs -->
@@ -68,30 +100,21 @@
             <properties>
                 <cibseven.version>1.1.0</cibseven.version>
             </properties>
-        </profile>
-
-        <profile>
-            <!-- Starting from JDK 12+, Nashorn is not part of JDK -->
-            <id>jdk12</id>
-            <activation>
-                <jdk>[12,</jdk>
-            </activation>
             <dependencies>
                 <dependency>
-                    <groupId>org.graalvm.polyglot</groupId>
-                    <artifactId>js</artifactId>
-                    <version>${graalvm.version}</version>
-                    <scope>runtime</scope>
-                    <type>pom</type>
-                </dependency>
-                <dependency>
-                    <groupId>org.graalvm.js</groupId>
-                    <artifactId>js-scriptengine</artifactId>
-                    <version>${graalvm.version}</version>
-                    <scope>runtime</scope>
+                    <groupId>org.springdoc</groupId>
+                    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                    <version>2.6.0</version>
                 </dependency>
             </dependencies>
         </profile>
+        <profile>
+            <id>cibseven-bpm-engine-2.0.0</id>
+            <properties>
+                <cibseven.version>2.0.0</cibseven.version>
+            </properties>
+        </profile>
+
     </profiles>
 
 </project>
