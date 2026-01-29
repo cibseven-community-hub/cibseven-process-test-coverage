@@ -105,9 +105,9 @@
             </properties>
         </profile>
         <profile>
-            <id>cibseven-bpm-engine-2.0.0-SNAPSHOT</id>
+            <id>cibseven-bpm-engine-2.0.0</id>
             <properties>
-                <cibseven.version>2.0.0-SNAPSHOT</cibseven.version>
+                <cibseven.version>2.0.0</cibseven.version>
             </properties>
         </profile>
 

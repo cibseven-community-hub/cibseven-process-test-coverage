@@ -35,7 +35,7 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kotlin-logging.version>7.0.4</kotlin-logging.version>
 
-        <cibseven.compile.version>2.0.0-SNAPSHOT</cibseven.compile.version>
+        <cibseven.compile.version>2.0.0</cibseven.compile.version>
         <cibseven.bom.version>2.0.0</cibseven.bom.version>
 <!--        <zeebe.version>8.4.5</zeebe.version>-->
 <!--        <spring-zeebe.version>8.3.6</spring-zeebe.version>-->

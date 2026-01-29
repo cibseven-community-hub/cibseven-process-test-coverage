@@ -12,7 +12,7 @@
 
     <properties>
         <jgiven.version>1.3.1</jgiven.version>
-        <cibseven-bpm-jgiven.version>2.0.0-SNAPSHOT</cibseven-bpm-jgiven.version>
+        <cibseven-bpm-jgiven.version>2.0.0</cibseven-bpm-jgiven.version>
     </properties>
 
     <dependencies>

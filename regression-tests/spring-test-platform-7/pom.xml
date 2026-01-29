@@ -80,10 +80,10 @@
 
     <profiles>
         <profile>
-            <id>cibseven-bpm-engine-2.0.0-SNAPSHOT</id>
+            <id>cibseven-bpm-engine-2.0.0</id>
             <properties>
-                <cibseven.version>2.0.0-SNAPSHOT</cibseven.version>
-                <spring-boot.version>3.3.5</spring-boot.version>
+                <cibseven.version>2.0.0</cibseven.version>
+                <spring-boot.version>3.4.5</spring-boot.version>
             </properties>
         </profile>
     </profiles>
