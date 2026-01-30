@@ -34,8 +34,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.camunda.community.process_test_coverage</groupId>
-            <artifactId>camunda-process-test-coverage-report-generator</artifactId>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
+            <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
+            <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
 
