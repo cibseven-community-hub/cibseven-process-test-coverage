@@ -2,9 +2,9 @@ package org.cibseven.community.process_test_coverage.report;
 
 /*-
  * #%L
- * CIB seven Process Test Coverage Report Generator
+ * Camunda Process Test Coverage Report Generator
  * %%
- * Copyright (C) 2019 - 2026 CIB seven
+ * Copyright (C) 2019 - 2024 Camunda
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

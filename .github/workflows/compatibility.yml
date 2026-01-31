@@ -23,7 +23,7 @@ jobs:
         cibseven-version:
           - '1.1.0' # 2024
           - '2.0.0' # 2025
-          - '2.1.0' # 2026
+          - '2.1.0' # 2025
 
     runs-on: ${{ matrix.os }}
     steps:

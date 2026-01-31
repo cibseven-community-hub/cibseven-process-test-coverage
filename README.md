@@ -26,11 +26,11 @@ This CIB seven community extension **visualises** test process **paths** and **c
 * Can be used inside Spring Tests
 
 > [!IMPORTANT]
-> If you're running with a Java version prior to 17 you have to use the old version 2.x (latest 2.8.0)
+> If you're running with a Java version prior to 17 you have to use the older version
 
 ## Documentation
 
-If you are interested in further documentation, please check our [Documentation Page](https://camunda-community-hub.github.io/camunda-process-test-coverage/snapshot/index.html)
+If you are interested in further documentation, please check our [Documentation Page](https://cibseven-community-hub.github.io/cibseven-process-test-coverage/snapshot/index.html)
 
 ## Installation
 
