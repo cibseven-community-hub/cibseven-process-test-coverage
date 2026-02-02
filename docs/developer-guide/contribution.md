@@ -1,6 +1,6 @@
 # How to Contribute
 
-We'd love you to contribute to this project by filing bugs, helping others on the [issue tracker](https://github.com/cibseven-community-hub/process-test-coverage/issues), and by contributing features/bug fixes through pull requests.
+We'd love you to contribute to this project by filing bugs, helping others on the [issue tracker](https://github.com/cibseven-community-hub/cibseven-process-test-coverage/issues), and by contributing features/bug fixes through pull requests.
 
 Read more on [how to get the project up and running](#setting-up-the-project-locally).
 

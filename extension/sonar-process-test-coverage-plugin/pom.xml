@@ -97,8 +97,8 @@
                 <configuration>
                     <pluginKey>processtestcoverage</pluginKey>
                     <pluginClass>org.cibseven.community.process_test_coverage.sonar.ProcessTestCoveragePlugin</pluginClass>
-                    <pluginSourcesUrl>https://github.com/cibseven-community-hub/process-test-coverage</pluginSourcesUrl>
-                    <pluginIssueTrackerUrl>https://github.com/cibseven-community-hub/process-test-coverage/issues</pluginIssueTrackerUrl>
+                    <pluginSourcesUrl>https://github.com/cibseven-community-hub/cibseven-process-test-coverage</pluginSourcesUrl>
+                    <pluginIssueTrackerUrl>https://github.com/cibseven-community-hub/cibseven-process-test-coverage/issues</pluginIssueTrackerUrl>
                     <pluginApiMinVersion>9.9</pluginApiMinVersion>
                 </configuration>
             </plugin>
