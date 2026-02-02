@@ -111,7 +111,7 @@ but then the project has been abandoned for some time and received a full rewrit
 of flowcov.io squad and BPM craftsmen from Holisticon AG. We appreciate any help and effort you put into maintenance
 discussion and further development.
 
-Please check the release notes of [individual releases](https://github.com/cibseven-community-hub/process-test-coverage/releases) for the changes and involved contributors.
+Please check the release notes of [individual releases](https://github.com/cibseven-community-hub/cibseven-process-test-coverage/releases) for the changes and involved contributors.
 
 ## License
 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [LICENSE](LICENSE.md) file.
