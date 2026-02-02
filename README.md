@@ -1,5 +1,9 @@
-[![CIB seven 2.0.0](https://img.shields.io/badge/CIB%20seven-2.0.0-orange.svg)](https://docs.cibseven.org/manual/2.0/)
+[![CIB seven 2.1.0](https://img.shields.io/badge/CIB%20seven-2.1.0-orange.svg)](https://docs.cibseven.org/manual/2.1/)
 [![Maven Central](https://img.shields.io/maven-central/v/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-starter-platform-7?label=Maven%20Central)](https://central.sonatype.com/artifact/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-starter-platform-7)
+[![](https://img.shields.io/badge/Lifecycle-Stable-brightgreen)](https://github.com/cibseven-community-hub/community/blob/main/extension-lifecycle.md#stable-)
+[![](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/cibseven-community-hub/community)
+![Compatible with: CIB seven](https://img.shields.io/badge/Compatible%20with-CIB%20seven-26d07c)
+![Supported CIB seven versions](https://img.shields.io/badge/CIB%20seven%20Version-%201.1%20to%202.1-orange.svg)
 
 # CIB seven Process Test Coverage
 
@@ -17,14 +21,21 @@ This CIB seven community extension **visualises** test process **paths** and **c
 
 * Integrates with all versions of CIB seven
 * Is continuously checked against the latest CIB seven releases (check out our compatibility CI/CD pipeline)
-* Tested with JDKs 11 and 17
+* Tested with JDKs 17 and 21 and different operating systems (Windows, Mac and Linux).
 * Supports **JUnit 4.13.1+** (4.11 does not work) or **JUnit 5**
 * Can be used inside Spring Tests
 
+> [!IMPORTANT]
+> If you're running with a Java version prior to 17 you have to use the older version
+
+## Documentation
+
+If you are interested in further documentation, please check our [Documentation Page](https://cibseven-community-hub.github.io/cibseven-process-test-coverage/snapshot/index.html)
+
 ## Installation
 
- Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-bom/badge.svg" align="right" /></a>
-0
+Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.cibseven.community.process_test_coverage/cibseven-process-test-coverage-bom/badge.svg" align="right" /></a>
+
 ### JUnit5
 
 ```xml

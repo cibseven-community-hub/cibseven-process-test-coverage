@@ -4,7 +4,7 @@
     <parent>
         <artifactId>cibseven-process-test-coverage-parent</artifactId>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
-        <version>2.0.0</version>
+        <version>2.1.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Sonar Plugin</name>
@@ -12,8 +12,8 @@
     <packaging>sonar-plugin</packaging>
 
     <properties>
-        <sonar-plugin-api.version>10.14.0.2599</sonar-plugin-api.version>
-        <sonar.api.impl.version>10.3.0.82913</sonar.api.impl.version>
+        <sonar-plugin-api.version>13.2.0.3137</sonar-plugin-api.version>
+        <sonar.api.impl.version>25.10.0.114319</sonar.api.impl.version>
     </properties>
 
     <dependencies>
@@ -31,6 +31,13 @@
         <dependency>
             <groupId>org.cibseven.bpm.model</groupId>
             <artifactId>cibseven-bpmn-model</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.cibseven.community.process_test_coverage</groupId>
+            <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -61,15 +68,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.8.1</version>
                 <configuration>
                     <artifactItems>
                         <artifactItem>
                             <groupId>org.cibseven.community.process_test_coverage</groupId>
                             <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
                             <version>${project.version}</version>
-                            <outputDirectory>target/classes</outputDirectory>
-                            <includes>**/*.js,**/*.css,**/*.html</includes>
+                            <outputDirectory>target/coverage-viewer</outputDirectory>
+                            <includes>**/*.js</includes>
                         </artifactItem>
                     </artifactItems>
                 </configuration>
@@ -99,7 +105,6 @@
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
-                <version>1.15.1</version>
                 <executions>
                     <execution>
                         <phase>initialize</phase>

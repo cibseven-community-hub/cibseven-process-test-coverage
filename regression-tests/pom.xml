@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <artifactId>cibseven-process-test-coverage-root</artifactId>
-        <version>2.0.0</version>
+        <version>2.1.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage Regression Tests Parent</name>
@@ -14,7 +14,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <graalvm.version>24.1.2</graalvm.version>
+        <graalvm.version>25.0.0</graalvm.version>
         <cibseven.version>${cibseven.compile.version}</cibseven.version>
 
         <jacoco.skip>true</jacoco.skip>
@@ -43,7 +43,7 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Spring Boot import -->
+            <!-- Re-define Spring Boot import -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -68,6 +68,7 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -114,7 +115,12 @@
                 <cibseven.version>2.0.0</cibseven.version>
             </properties>
         </profile>
-
+        <profile>
+            <id>cibseven-bpm-engine-2.1.0</id>
+            <properties>
+                <cibseven.version>2.1.0</cibseven.version>
+            </properties>
+        </profile>
     </profiles>
 
 </project>

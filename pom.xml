@@ -12,7 +12,7 @@
     <groupId>org.cibseven.community.process_test_coverage</groupId>
     <artifactId>cibseven-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
 
     <name>CIB seven Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.
@@ -25,25 +25,21 @@
     <inceptionYear>2019</inceptionYear>
 
     <modules>
-        <module>extension</module>
         <module>bom</module>
+        <module>extension</module>
     </modules>
 
     <properties>
         <version.java>17</version.java>
-        <kotlin.version>2.1.10</kotlin.version>
+        <kotlin.version>2.2.21</kotlin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-        <kotlin-logging.version>7.0.4</kotlin-logging.version>
+        <kotlin-logging.version>7.0.13</kotlin-logging.version>
 
-        <cibseven.compile.version>2.0.0</cibseven.compile.version>
-        <cibseven.bom.version>2.0.0</cibseven.bom.version>
-<!--        <zeebe.version>8.4.5</zeebe.version>-->
-<!--        <spring-zeebe.version>8.3.6</spring-zeebe.version>-->
-<!--        <spring-boot.version>2.7.18</spring-boot.version>-->
-        <spring-boot.version>3.3.5</spring-boot.version>
-        <cibseven.bom.version>2.0.0</cibseven.bom.version>
+        <cibseven.compile.version>2.1.0</cibseven.compile.version>
+        <cibseven.bom.version>2.1.0</cibseven.bom.version>
+        <spring-boot.version>3.5.6</spring-boot.version>
 
-        <mockito-kotlin.version>5.4.0</mockito-kotlin.version>
+        <mockito-kotlin.version>6.1.0</mockito-kotlin.version>
     </properties>
 
     <dependencyManagement>
@@ -77,7 +73,7 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Camunda 7 -->
+            <!-- CIB Seven -->
             <dependency>
                 <groupId>org.cibseven.bpm</groupId>
                 <artifactId>cibseven-bom</artifactId>
@@ -95,7 +91,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.14.0</version>
+                    <version>3.14.1</version>
                     <configuration>
                         <encoding>UTF-8</encoding>
                         <source>${version.java}</source>
@@ -105,7 +101,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.5.2</version>
+                    <version>3.5.4</version>
                     <configuration>
                         <useSystemClassLoader>false</useSystemClassLoader>
                         <shutdown>kill</shutdown>
@@ -117,7 +113,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
-                    <version>3.5.0</version>
+                    <version>3.6.2</version>
                     <executions>
                         <execution>
                             <id>enforce-maven</id>
@@ -199,12 +195,12 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>3.5.0</version>
+                    <version>3.6.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>2.5.0</version>
+                    <version>2.7.0</version>
                     <configuration>
                         <licenseName>apache_v2</licenseName>
                         <failOnMissingHeader>true</failOnMissingHeader>
@@ -213,6 +209,11 @@
                             <exclude>**/*.json</exclude>
                         </excludes>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.eirslett</groupId>
+                    <artifactId>frontend-maven-plugin</artifactId>
+                    <version>1.15.4</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -269,7 +270,7 @@
                         <plugin>
                             <groupId>org.jetbrains.dokka</groupId>
                             <artifactId>dokka-maven-plugin</artifactId>
-                            <version>2.0.0</version>
+                            <version>2.1.0</version>
                             <executions>
                                 <execution>
                                     <id>attach-javadocs</id>
@@ -291,7 +292,7 @@
                         <plugin>
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>build-helper-maven-plugin</artifactId>
-                            <version>3.6.0</version>
+                            <version>3.6.1</version>
                             <executions>
                                 <execution>
                                     <id>attach-kotlin-source</id>

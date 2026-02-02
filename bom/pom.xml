@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.cibseven.community.process_test_coverage</groupId>
         <artifactId>cibseven-process-test-coverage-root</artifactId>
-        <version>2.0.0</version>
+        <version>2.1.0</version>
     </parent>
 
     <name>CIB seven Process Test Coverage BOM</name>
@@ -42,6 +42,11 @@
             </dependency>
             <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
+                <artifactId>cibseven-process-test-coverage-spring-test-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.cibseven.community.process_test_coverage</groupId>
                 <artifactId>cibseven-process-test-coverage-spring-test-platform-7</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -50,7 +55,7 @@
                 <artifactId>cibseven-process-test-coverage-starter-platform-7</artifactId>
                 <version>${project.version}</version>
             </dependency>
-              <dependency>
+            <dependency>
                 <groupId>org.cibseven.community.process_test_coverage</groupId>
                 <artifactId>cibseven-process-test-coverage-report-generator</artifactId>
                 <version>${project.version}</version>
