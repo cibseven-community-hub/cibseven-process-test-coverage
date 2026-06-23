@@ -30,14 +30,15 @@
     </modules>
 
     <properties>
-        <version.java>17</version.java>
+        <version.java>21</version.java>
         <kotlin.version>2.2.21</kotlin.version>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kotlin-logging.version>7.0.13</kotlin-logging.version>
 
-        <cibseven.compile.version>2.1.0</cibseven.compile.version>
-        <cibseven.bom.version>2.1.0</cibseven.bom.version>
-        <spring-boot.version>3.5.6</spring-boot.version>
+        <cibseven.compile.version>2.2.0</cibseven.compile.version>
+        <cibseven.bom.version>2.2.0</cibseven.bom.version>
+        <spring-boot.version>4.0.6</spring-boot.version>
+        <springdoc.version>3.0.3</springdoc.version>
 
         <mockito-kotlin.version>6.1.0</mockito-kotlin.version>
     </properties>
@@ -80,6 +81,13 @@
                 <version>${cibseven.bom.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+
+            <!-- springdoc-openapi (not managed by the Spring Boot BOM) -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
