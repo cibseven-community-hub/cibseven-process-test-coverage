@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       fail-fast: false
-      # Build for three operating systems, currently JVMs 17,21 and latest three Camunda versions (last two years)
+      # Build for three operating systems, currently JVMs 17,21 and latest three CIB seven versions (last two years)
       matrix:
         os:
           - 'ubuntu-latest'
@@ -21,9 +21,9 @@ jobs:
           - '17'
           - '21'
         cibseven-version:
-          - '1.1.0' # 2024
           - '2.0.0' # 2025
           - '2.1.0' # 2025
+          - '2.2.0' # 2026
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -57,4 +57,4 @@ jobs:
         run: ./mvnw enforcer:enforce -f regression-tests -Drules=requireProfileIdsExist "-Pcibseven-bpm-engine-${{ matrix.cibseven-version }}"
 
       - name: Build with Maven
-        run: ./mvnw clean verify -U -B -T4 "-Pregression-test" "-Pcibseven-bpm-engine-${{ matrix.cibseven-version }}" -DskipExamples -DskipPlugins
+        run: ./mvnw clean verify -U -B -T4 "-Dversion.java=${{ matrix.jdk }}" "-Pregression-test" "-Pcibseven-bpm-engine-${{ matrix.cibseven-version }}" -DskipExamples -DskipPlugins
