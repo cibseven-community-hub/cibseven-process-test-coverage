@@ -88,6 +88,20 @@
                 <spring-boot.version>3.4.5</spring-boot.version>
             </properties>
         </profile>
+        <profile>
+            <id>cibseven-bpm-engine-2.1.0</id>
+            <properties>
+                <cibseven.version>2.1.0</cibseven.version>
+                <spring-boot.version>3.5.6</spring-boot.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>cibseven-bpm-engine-2.2.0</id>
+            <properties>
+                <cibseven.version>2.2.0</cibseven.version>
+                <spring-boot.version>3.5.14</spring-boot.version>
+            </properties>
+        </profile>
     </profiles>
 
 </project>

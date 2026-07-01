@@ -120,6 +120,12 @@
                 <cibseven.version>2.1.0</cibseven.version>
             </properties>
         </profile>
+        <profile>
+            <id>cibseven-bpm-engine-2.2.0</id>
+            <properties>
+                <cibseven.version>2.2.0</cibseven.version>
+            </properties>
+        </profile>
     </profiles>
 
 </project>
