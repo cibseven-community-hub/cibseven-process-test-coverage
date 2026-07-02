@@ -12,6 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       # Build for three operating systems, currently JVMs 17,21 and latest three CIB seven versions (last two years)
+      # Starting from CIB seven 2.2.0, it requires Spring Boot 4 which is not backwards compatible
       matrix:
         os:
           - 'ubuntu-latest'
@@ -21,8 +22,8 @@ jobs:
           - '17'
           - '21'
         cibseven-version:
-          - '2.0.0' # 2025
-          - '2.1.0' # 2025
+          #- '2.0.0' # 2025
+          #- '2.1.0' # 2025
           - '2.2.0' # 2026
 
     runs-on: ${{ matrix.os }}
