@@ -7,7 +7,7 @@ plugins {
 repositories {
     mavenCentral()
     maven {
-        url = uri("file://${projectDir}/target/dependencies")
+        url = uri(layout.projectDirectory.dir("target/dependencies"))
     }
 }
 
