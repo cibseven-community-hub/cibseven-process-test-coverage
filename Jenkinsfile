@@ -11,11 +11,11 @@ import groovy.transform.Field
 @Field MavenProjectInformation mavenProjectInformation = null
 @Field Map pipelineParams = [
     pom: ConstantsInternal.DEFAULT_MAVEN_POM_PATH,
-    mvnContainerName: Constants.MAVEN_JDK_17_CONTAINER,
+    mvnContainerName: Constants.MAVEN_JDK_21_CONTAINER,
     uiParamPresets: [:],
     testMode: false,
     buildPodConfig: [
-        (Constants.MAVEN_JDK_17_CONTAINER): [
+        (Constants.MAVEN_JDK_21_CONTAINER): [
             resources: [
                 // cpu: '4',
                 memory: '6Gi',
