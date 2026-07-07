@@ -113,7 +113,7 @@ abstract class BaseProcessEngineCoverageTestExecutionListener : TestExecutionLis
                 logger.warn { "${suite.name} test class coverage could not be calculated, check configuration" }
             } else {
                 // Log coverage percentage
-                logger.info("${suite.name} test class coverage is: $suiteCoveragePercentage")
+                logger.info { "${suite.name} test class coverage is: $suiteCoveragePercentage" }
                 logCoverageDetail(suite)
 
                 // Create graphical report
@@ -142,7 +142,7 @@ abstract class BaseProcessEngineCoverageTestExecutionListener : TestExecutionLis
             logger.warn { "${run.name} test method coverage could not be calculated, check configuration" }
         } else {
             // Log coverage percentage
-            logger.info("${run.name} test method coverage is $coveragePercentage")
+            logger.info { "${run.name} test method coverage is $coveragePercentage" }
             logCoverageDetail(run)
 
             processEngineCoverageProperties.testMethodCoverageConditions[run.name]?.let {
@@ -155,8 +155,8 @@ abstract class BaseProcessEngineCoverageTestExecutionListener : TestExecutionLis
      * Logs the string representation of the passed suite object.
      */
     private fun logCoverageDetail(suite: Suite) {
-        if (logger.isDebugEnabled && processEngineCoverageProperties.detailedCoverageLogging) {
-            logger.debug(suite.toString())
+        if (logger.isDebugEnabled() && processEngineCoverageProperties.detailedCoverageLogging) {
+            logger.debug { suite.toString() }
         }
     }
 
@@ -164,8 +164,8 @@ abstract class BaseProcessEngineCoverageTestExecutionListener : TestExecutionLis
      * Logs the string representation of the passed run object.
      */
     private fun logCoverageDetail(run: Run) {
-        if (logger.isDebugEnabled && processEngineCoverageProperties.detailedCoverageLogging) {
-            logger.debug(run.toString())
+        if (logger.isDebugEnabled() && processEngineCoverageProperties.detailedCoverageLogging) {
+            logger.debug { run.toString() }
         }
     }
 
