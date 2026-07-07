@@ -46,12 +46,12 @@
         </dependency>
         <dependency>
             <groupId>org.cibseven.bpm.springboot</groupId>
-            <artifactId>cibseven-bpm-spring-boot-starter-test</artifactId>
+            <artifactId>cibseven-bpm-spring-boot-starter-test-4</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.cibseven.bpm.springboot</groupId>
-            <artifactId>cibseven-bpm-spring-boot-starter-rest</artifactId>
+            <artifactId>cibseven-bpm-spring-boot-starter-rest-4</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -91,6 +91,20 @@
             <properties>
                 <cibseven.version>2.0.0</cibseven.version>
                 <spring-boot.version>3.4.5</spring-boot.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>cibseven-bpm-engine-2.1.0</id>
+            <properties>
+                <cibseven.version>2.1.0</cibseven.version>
+                <spring-boot.version>3.5.6</spring-boot.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>cibseven-bpm-engine-2.2.0</id>
+            <properties>
+                <cibseven.version>2.2.0</cibseven.version>
+                <spring-boot.version>4.0.6</spring-boot.version>
             </properties>
         </profile>
     </profiles>

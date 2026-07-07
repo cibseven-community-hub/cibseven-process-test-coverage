@@ -43,7 +43,7 @@
         </dependency>
         <dependency>
             <groupId>org.cibseven.bpm.springboot</groupId>
-            <artifactId>cibseven-bpm-spring-boot-starter-test</artifactId>
+            <artifactId>cibseven-bpm-spring-boot-starter-test-4</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -53,7 +53,7 @@
         </dependency>
         <dependency>
             <groupId>org.cibseven.bpm.springboot</groupId>
-            <artifactId>cibseven-bpm-spring-boot-starter-rest</artifactId>
+            <artifactId>cibseven-bpm-spring-boot-starter-rest-4</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
