@@ -6,6 +6,11 @@ plugins {
 
 repositories {
     mavenCentral()
+    // Developing purposes: 
+    // The parent POM chain imports org.cibseven.bpm:cibseven-bom as snapshot, which is neither on Maven
+    // Central nor copied into target/dependencies by copy-dependencies. The surrounding Maven
+    // build already resolves it, so it is available from the local repository.
+    mavenLocal()
     maven {
         url = uri(layout.projectDirectory.dir("target/dependencies"))
     }
