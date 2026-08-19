@@ -126,9 +126,6 @@
                                 <argument>-PprojectName=${project.artifactId}</argument>
                                 <argument>-Pversion=${project.version}</argument>
                                 <argument>-PkotlinVersion=${kotlin.version}</argument>
-                                <!-- Point Gradle's mavenLocal() at the repository Maven itself uses, so the
-                                     Gradle build resolves from the artifacts the surrounding Maven build has already downloaded. -->
-                                <argument>-Dmaven.repo.local=${settings.localRepository}</argument>
                                 <argument>-S</argument>
                             </arguments>
                         </configuration>
