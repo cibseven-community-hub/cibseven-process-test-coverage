@@ -35,8 +35,8 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kotlin-logging.version>8.0.4</kotlin-logging.version>
 
-        <cibseven.compile.version>2.3.0-SNAPSHOT</cibseven.compile.version>
-        <cibseven.bom.version>2.3.0-SNAPSHOT</cibseven.bom.version>
+        <cibseven.compile.version>2.2.0</cibseven.compile.version>
+        <cibseven.bom.version>2.2.0</cibseven.bom.version>
         <spring-boot.version>4.0.6</spring-boot.version>
         <springdoc.version>3.0.3</springdoc.version>
 
