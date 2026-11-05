@@ -1,6 +1,6 @@
 This CIB seven community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
 
-![Coverage report](assets/img/flowcov_coverage_report.png)
+![Coverage report](assets/img/coverage_report.png)
 
 ## Highlights
 
