@@ -108,7 +108,7 @@ Running your JUnit tests now leaves **html** files for individual test methods a
 
 There are plenty of contributors to this project. Its initial design has been created by the WDW eLab GmbH and some others,
 but then the project has been abandoned for some time and received a full rewrite including the new architecture by members
-of flowcov.io squad and BPM craftsmen from Holisticon AG. We appreciate any help and effort you put into maintenance
+of flowcov.io squad (now Miragon) and BPM craftsmen from Holisticon AG. We appreciate any help and effort you put into maintenance
 discussion and further development.
 
 Please check the release notes of [individual releases](https://github.com/cibseven-community-hub/cibseven-process-test-coverage/releases) for the changes and involved contributors.
