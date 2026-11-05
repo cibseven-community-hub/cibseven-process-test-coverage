@@ -1,9 +1,9 @@
 {
-    "name": "@flowsquad/flowcov-viewer",
+    "name": "cibseven-process-test-coverage-viewer",
     "version": "1.0.1",
     "type": "module",
-    "description": "Contains the viewer for the flowcov.io frontend",
-    "author": "FlowSquad GmbH <info@flowsquad.io>",
+    "description": "Contains the viewer for the CIB seven Process Test Coverage report",
+    "author": "Miragon GmbH",
     "homepage": "..",
     "private": false,
     "scripts": {
