@@ -18,6 +18,7 @@ package org.cibseven.community.process_test_coverage.engine.platform7
 import org.cibseven.bpm.engine.delegate.DelegateExecution
 import org.cibseven.bpm.engine.delegate.ExecutionListener
 import org.cibseven.bpm.engine.impl.bpmn.parser.AbstractBpmnParseListener
+import org.cibseven.bpm.engine.impl.persistence.entity.ProcessDefinitionEntity
 import org.cibseven.bpm.engine.impl.pvm.process.ActivityImpl
 import org.cibseven.bpm.engine.impl.pvm.process.ScopeImpl
 import org.cibseven.bpm.engine.impl.pvm.process.TransitionImpl
@@ -47,9 +48,9 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
      */
     private lateinit var coverageState: Collector
     private val executionListener: ExecutionListener = ExecutionListener { execution: DelegateExecution -> execute(execution) }
-    private val eventBasedGatewayFlows: MutableSet<String> = mutableSetOf()
-    private val activityToFlow: MutableMap<String, String> = mutableMapOf()
-    private val linkedEventDefinitions: MutableMap<String, String> = mutableMapOf()
+    private val eventBasedGatewayFlows: MutableSet<Pair<String, String>> = mutableSetOf()
+    private val activityToFlow: MutableMap<Pair<String, String>, String> = mutableMapOf()
+    private val linkedEventDefinitions: MutableMap<Pair<String, String>, String> = mutableMapOf()
 
     fun setCoverageState(coverageState: Collector) {
         this.coverageState = coverageState
@@ -59,21 +60,22 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
     private fun execute(execution: DelegateExecution) {
         require(this::coverageState.isInitialized) { "Coverage state must be initialized" }
         if (ExecutionListener.EVENTNAME_START == execution.eventName) {
+            val activityKey = getProcessKey(execution) to execution.currentActivityId
             // if activity after an event based gateway is triggered, also create event for sequence flow
-            if (activityToFlow.containsKey(execution.currentActivityId)) {
+            if (activityToFlow.containsKey(activityKey)) {
                 val flowEvent = Event(
                     EventSource.SEQUENCE_FLOW,
                     EventType.TAKE,
-                    activityToFlow[execution.currentActivityId]!!,
+                    activityToFlow[activityKey]!!,
                     "sequenceFlow",
-                    getProcessKey(execution),
+                    activityKey.first,
                     Instant.now().epochSecond
                 )
                 coverageState.addEvent(flowEvent)
             }
             // if activity is catch event of a linked event definition also mark the throw event
-            if (linkedEventDefinitions.containsKey(execution.currentActivityId)) {
-                val linkEventDefinition = linkedEventDefinitions[execution.currentActivityId]!!
+            if (linkedEventDefinitions.containsKey(activityKey)) {
+                val linkEventDefinition = linkedEventDefinitions[activityKey]!!
                 val intermediateThrowEvents =
                     execution.bpmnModelInstance.getModelElementsByType(IntermediateThrowEvent::class.java)
                 intermediateThrowEvents
@@ -88,7 +90,7 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
                             EventType.START,
                             it.id,
                             it.elementType.typeName,
-                            getProcessKey(execution)
+                            activityKey.first
                         )
                         coverageState.addEvent(start)
                         val end = Event(
@@ -96,7 +98,7 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
                             EventType.END,
                             it.id,
                             it.elementType.typeName,
-                            getProcessKey(execution)
+                            activityKey.first
                         )
                         coverageState.addEvent(end)
                     }
@@ -142,6 +144,10 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
 
     private fun getProcessKey(delegateExecution: DelegateExecution): String {
         return delegateExecution.processEngineServices.repositoryService.getProcessDefinition(delegateExecution.processDefinitionId).key
+    }
+
+    private fun getProcessKey(scope: ScopeImpl): String {
+        return (scope.processDefinition as ProcessDefinitionEntity).key
     }
 
     override fun parseUserTask(userTaskElement: Element, scope: ScopeImpl, activity: ActivityImpl) {
@@ -208,7 +214,7 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
         this.addExecutionListener(activity)
         eventBasedGwElement.elements()
             .filter { it.tagName == "outgoing" }
-            .forEach { eventBasedGatewayFlows.add(it.text) }
+            .forEach { eventBasedGatewayFlows.add(getProcessKey(scope) to it.text) }
     }
 
     override fun parseExclusiveGateway(exclusiveGwElement: Element, scope: ScopeImpl, activity: ActivityImpl) {
@@ -223,12 +229,12 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
         // check whether activity is after event based gateway
         intermediateEventElement.elements()
             .filter { it.tagName == "incoming" }
-            .filter { eventBasedGatewayFlows.contains(it.text) }
-            .forEach { activityToFlow[intermediateEventElement.attribute("id")] = it.text }
+            .filter { eventBasedGatewayFlows.contains(getProcessKey(scope) to it.text) }
+            .forEach { activityToFlow[getProcessKey(scope) to intermediateEventElement.attribute("id")] = it.text }
         intermediateEventElement.elements()
             .filter { it.tagName == "linkEventDefinition" }
             .map { it.attribute("name") }
-            .forEach { linkedEventDefinitions[intermediateEventElement.attribute("id")] = it }
+            .forEach { linkedEventDefinitions[getProcessKey(scope) to intermediateEventElement.attribute("id")] = it }
         this.addExecutionListener(activity)
     }
 
@@ -265,8 +271,8 @@ class ElementCoverageParseListener : AbstractBpmnParseListener() {
         // check whether activity is after event based gateway
         receiveTaskElement.elements()
             .filter { it.tagName == "incoming" }
-            .filter { eventBasedGatewayFlows.contains(it.text) }
-            .forEach { activityToFlow[receiveTaskElement.attribute("id")] = it.text }
+            .filter { eventBasedGatewayFlows.contains(getProcessKey(scope) to it.text) }
+            .forEach { activityToFlow[getProcessKey(scope) to receiveTaskElement.attribute("id")] = it.text }
         this.addExecutionListener(activity)
     }
 
